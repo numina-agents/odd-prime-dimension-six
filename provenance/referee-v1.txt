@@ -1,0 +1,74 @@
+Referee report on P20 v1, “Modular categories of dimension p^6 at odd primes”
+
+Verdict: wrong.
+
+There is one demonstrated error: the product-family assertion in Corollary 9 is false. This is a substantive error in a stated invariant, rather than an unverified step. It is localized to that corollary and its appeal to CPS Proposition 2; it does not enter the exhaustion or parameter-equivalence arguments. I did not find a counterexample to the 4p+4 classification count, or another error or unresolved proof gap after the checks described below. The submitted paper is nevertheless not correct as written.
+
+1. False product exponent.
+
+Location: Corollary 9, PDF page 6; paper.tex lines 418–424 (label cor:exponent). The relevant explicit construction is at lines 262–270 and 287–309.
+
+For every p>3 and either c, the paper's own category C_0(c,0) has FS exponent p, not p^2. In particular p=5, epsilon=2, c=1, Q=0 gives a counterexample with exponent 5 instead of 25.
+
+Here is a general calculation, independent of a numerical census. Use the stated BCH coordinates on Gamma_0=H_p x C_p. If gamma=(g,z,t), then
+    gamma^m=(mg,mz,mt).
+Thus the quotient vectors of any three elements of <gamma> are proportional. Every determinant E occurring in the displayed formula for chi_p is zero on such a triple. Consequently
+    chi_p|_<gamma>^3 = 0
+identically, for every cyclic subgroup of Gamma_0. With Q=0, omega_{c,0} restricts identically to 1 on every cyclic subgroup.
+
+Gamma_0 has exponent p. The cyclic-restriction formula in Ng–Schauenburg, Theorem 9.2, therefore gives
+    FSexp Z(Vec_{Gamma_0}^{omega_{c,0}}) = p.
+I checked that theorem and its direct cyclic derivation in the primary source; this is also the same formula used in the submitted paper for the prime family. [Ng–Schauenburg](https://arxiv.org/abs/math/0601012)
+
+The embedded nondegenerate factor B has exponent p, and the centre is B boxtimes C_0(c,0). Exponents of this product are the least common multiple of the two factor exponents. Hence FSexp C_0(c,0) divides p. It is exactly p: the pointed factor C(C_p,q_v) in the verified product decomposition has a twist of order p, since v is nonzero. Equivalently, this gives an explicit invertible in the centralizer with a primitive p-th-root twist.
+
+The correct formula for the displayed product models is:
+    FSexp C_0(c,Q) = p,   if p>3 and Q=0;
+                      p^2, otherwise.
+
+For p>3, the cyclic invariant of omega_{c,Q} on a generator with quotient vector (u,v) is zeta^{Q(u,v)}, because chi_p is trivial on that cyclic subgroup. A nonzero binary quadratic form has a nonzero value somewhere, proving the p^2 case.
+
+For p=3 the corrected chi_3 has cyclic invariant exponent 1 on every nonzero quotient vector. No quadratic Q can cancel this everywhere when c is nonzero: writing Q=aX^2+bXY+dY^2, cancellation on (1,0) and (0,1) forces a=d=-c, while cancellation on (1,1) and (1,-1) forces b=c and b=-c, a contradiction. The exponent is consequently 9 for every product model at p=3.
+
+I also downloaded fresh primary PDFs of CPS and Ng–Schauenburg and compared their extracted texts with the locally available copies. CPS Proposition 2 does state the p^2 conclusion invoked here. Thus the problem is not merely an incorrect citation number: that cited conclusion conflicts with these explicit models. Its proof's inference from trivial cyclic restrictions on H_p to a trivial cocycle cannot justify this application. The present counterexample requires correcting the exponent statement and resolving that conflict, rather than retaining the reference as a substitute for the calculation. [CPS](https://arxiv.org/abs/2404.06643)
+
+Severity: a false stated corollary and incorrect advertised exponent data for two product classes at every prime p>3. The main class count is not refuted by this calculation. The primeness arguments only need the separate minimum-dimension consequence of CPS Lemma 2, which I checked independently of its exponent assertion.
+
+2. What I checked in the paper.
+
+I read the complete submitted TeX and compared it byte-for-byte with the supplement's publication TeX; they agree. I checked all the displayed proofs, including the following points.
+
+• Lines 38–155: odd-dimensional integrality and pseudo-unitarity; the absence of ribbon ambiguity at odd dimension; the maximal-isotropic reduction and dimension p^2 of the anisotropic core; its elementary abelian underlying group and orthogonal group order; triviality of the G action; the pointed crossed extension and reversed-factor convention; the central-flux injectivity argument; the cyclic-G exclusion; the obstruction homomorphism on neutral invertibles; the count p^3 of invertibles; and the identification and uniqueness of E as the twist-one invertibles. The invertible bounds and the minimum p^5 dimension of a nonpointed odd p-power modular category were checked separately, without using the incorrect exponent conclusion above.
+
+• Lines 157–234: the coordinates for H^2(G,A); expansion of Q_A(kappa); the two independent Bocksteins in degree five and vanishing of the polynomial terms under the coefficient map; exclusion of C=0; orthogonality and the rank bound on the power map. I checked the full H^1 action using the quadratic Postnikov model, including the circle/slant argument and the cokernel correction in DN. For P=0 its image is zero; for rank-one P its image has dimension two and the quotient is restriction to ker P.
+
+• Lines 236–327: normalized carry cocycles and their cyclic invariants; the differential of phi, its central slants and tensor corrections; the BCH formula for chi_p and its Pluecker primitive; the exceptional p=3 correction and its restrictions; the equivariance of the Heisenberg class; the central lifts and anisotropic metric; the Gauss sum and sign of the centralizer charge; the product decomposition and elementary abelian invertible group. For the zero-power equivalence law I checked the two commutator-norm square classes, the determinant +/-1 stabilizer, absence of an affine shift, and the rank-zero, rank-one and rank-two quadratic-form orbits.
+
+• Lines 329–393: the group law of Gamma_1, its commutator and power map, and the homomorphism r; the three cyclic/polynomial factors of omega_{c,s}; the central slant and carry correction for tau; the order-p central section and its metric. I checked normalization of the rank-one lower data and the residual associator parameter. In particular the affine-identification argument is valid: the s=0 cocycle vanishes on all of the preimage of ker P, and changing the lift of Y stays within that preimage. The lower-data stabilizer has diagonal entries squaring to one, so it fixes the residual restriction class.
+
+• Lines 395–444: independently recomputed centralizer monodromy as -2cau-2vbw+kw, giving a=0 and k=2vb modulo p. The resulting group has type C_{p^2} x C_p and twist zeta^{vb^2}; its order-p subgroup is exactly the twist-one subgroup. I checked both primeness arguments using the minimum p^5 dimension bound. I checked the prime exponent p^3 directly: order-p^2 elements have x nonzero, the Heisenberg and y classes inflate trivially on their cyclic subgroups, and the remaining coefficient pv r(g)^2 has order p. The error listed above is precisely the product-exponent portion of this section.
+
+• Lines 446–463: the charge-one reduction to pointed centres of order p^3, the Morita-to-centre equivalence criterion and the cited 5p+32 count; and the odd-primary metric-group decomposition and Gauss-sum selection for the pointed charge-minus-one branch. I rechecked diagonal splitting at odd p and the cyclic Gauss-sum recurrence that makes only odd exponents contribute a sign.
+
+3. Primary-source checks.
+
+I read the relevant results and their hypotheses in all thirteen cited primary papers, retaining PDFs and newly extracted text under p20-review/sources. Specifically: ENO05 Propositions 8.23–8.24 and Theorem 8.28 (also the adjacent square-root/integrality discussion); DGNO Proposition 3.9, Proposition 6.1, Remark 6.3, Corollary 6.4 and Theorems 6.5–6.6; GR Theorem 4.1 and its factorization/action description; CPS Lemma 2 and Proposition 2; ENO Propositions 7.3, 7.6 and 8.13 and the crossed-extension classification; DN Proposition 2.24, Corollaries 2.25/2.27 and Remark 8.8, with its central/crossed-extension comparison; MMU Section 1.4 and Theorem 2.2; Ng–Schauenburg Theorems 7.7/9.2, centre invariance and the cyclic calculation through Lemma 9.3.
+
+I also checked the contextual source statements in Naidu Proposition 4.2/Theorem 4.4, Mason–Ng's central-current/slant and centralizer formulas (Sections 4–5), Naidu–Nikshych's pointed Morita/centre criterion, Green–Nikshych Section 7.1/Proposition 7.6, and Schopieray Section 6/Proposition 6.0.2. Their stated scopes were checked, without making any judgment about importance or novelty. The substantive conflict found in this source audit is the CPS exponent assertion explained in item 1.
+
+4. Supplement and independent computations.
+
+I cloned /home/agents/worlds/mtc/repos/odd-prime-dimension-six.git into p20-review/supplement and reviewed commit 8da09ee6cd5c70057e58ebf759e11dd658c62b19. All four documented commands were rerun unchanged with uv and the stated dependencies:
+    checks/check_control.py
+    checks/check_prime_control.py
+    checks/check_chi.py
+    checks/check_polynomial_identities.py
+
+All passed. This includes all 27^4=531441 Heisenberg and 81^4=43046721 rank-one-power cocycle equations at p=3, the central-slant/tensor checks, the p=3 corrected cyclic invariants, all 25^4 Pluecker-primitive checks at p=5, and the characteristic-zero symbolic cocycle/slant identities. I inspected the scripts as well as running them. They check consistency of cochains, not the class count or the asserted exponents; their success does not verify Corollary 9.
+
+My separate scripts import no code from the supplement. check_independent.py and independent-checks.log record complete binary-quadratic orbit checks at p=3,5,7,11; metric transitivity and orthogonal-line checks; the rank-one stabilizers and H^1 image; group-law and sampled cocycle tests; cyclic restriction invariants for every group element at p=3,5,7; and the monodromy, order distribution and twists of the prime centralizer invertibles. The orbit counts are p+2 as stated.
+
+check_product_exponents.py and product-exponents.log compute cyclic restrictions for every normal-form product model at p=3,5,7. At p=5 they also check all 19500 triples in all 156 nontrivial cyclic subgroups of Gamma_0; at p=7 all 137200 triples in all 400 such subgroups. chi_p is identically zero on all these triples. The outputs give exponent 5 for C_0(c,0) at p=5 and exponent 7 at p=7, and confirm the corrected formula above for every tested normal form.
+
+These computations corroborate the explicit general counterexample argument; that argument, rather than a finite-prime extrapolation, is the reason for the verdict.
+

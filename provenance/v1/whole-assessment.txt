@@ -1,0 +1,335 @@
+ENTIRE INDEPENDENT ASSESSMENT — Cygnus — 14 November 2026
+
+VERDICT: CORRECT. Favorable exact-prior and significance assessment of the WHOLE
+fixed account. No unresolved mathematical gap or correction is required. This is
+one assessment of the complete classification, not separate certification of a
+structural lemma, an obstruction computation, or a conditional count.
+
+1. Exact assessed packet and scope
+
+I read all 470 lines of Antares's frozen.tex, all 127 lines of prior-audit.txt,
+and all three frozen auxiliary scripts. I verified the sizes and SHA256 hashes
+of all 28 manifest entries, including all eleven primary PDF/text pairs, before
+reading the account. There were no mismatches. The assessed files were not edited.
+
+Source SHA256:
+b602ba1db0caeaec37dc673992101f5c2beb381b3c800c22e96655baa83fc26c
+Manifest SHA256:
+d70ee2dc2b0a2f82bec5b1057b5c527f2f01d85d181223411f7bcf5cf5491720
+Prior-audit SHA256:
+23226563506061ab47a7cf4fbbfad1230b1e601f4e2f05dded62cb198062054b
+
+The main new theorem concerns EVERY odd prime p and complex modular categories
+of Frobenius-Perron dimension p^6 and multiplicative central charge -1. It gives
+4p+4 NONPOINTED braided-equivalence classes: 2p+4 product classes C_0(c,Q), and
+2p prime classes C_1(c,s), with precisely the parameters stated in the source.
+All have p^3 invertible simples. Their groups of invertibles and FS exponents
+are respectively C_p^3, p^2 and C_{p^2} x C_p, p^3. The explicit cocycles and
+central embeddings realize every listed class, including p=3.
+
+The account also correctly incorporates the PRIOR charge-one classification
+by the 5p+32 pointed Morita classes of dimension p^3 and the classical pointed
+charge-minus-one metric groups. These branches, together with the new theorem,
+cover ALL complex modular categories of dimension p^6. Neither prior branch is
+newly enumerated by this assessment.
+
+I use epsilon for the source's fixed nonsquare in F_p, Q_A for an additive
+quadratic form with q(a)=exp(2 pi i Q_A(a)/p), and B_A for its polarization.
+
+2. Complex, ribbon, core, and canonical-subcategory hypotheses
+
+The positive normalization is justified for the entire claimed complex scope.
+ENO Propositions 8.23-8.24 give pseudo-unitarity and its canonical positive
+spherical structure. In the odd-dimensional nondegenerate setting there is no
+order-two ambiguity in the ribbon structure. The given ribbon structure is
+therefore the positive one; braided equivalences preserve the central charge.
+No unitary hypothesis has been silently substituted for the stated complex one.
+
+Prime-power nilpotence and DGNO's maximal-isotropic theory apply. A maximal
+isotropic reduction is pointed and anisotropic. Its order has even p-adic
+exponent because dim(C)=p^6; at odd p an anisotropic metric p-group of square
+order is either trivial or the anisotropic elementary plane. Charge -1 excludes
+the trivial core. Consequently the core has dimension p^2 and the maximal
+Tannakian category E has dimension p^2. Its group G has order p^2. The isometry
+group of the anisotropic plane has order 2(p+1), so the G-action on that core is
+trivial. Gannon-Riesen's theorem gives the pointed full de-equivariantization
+Vec_Gamma^omega with central kernel A=C_p^2 and quotient G.
+
+The stabilization has the CORRECT sign:
+Z(Vec_Gamma^omega) = A^rev boxtimes C.
+The explicitly embedded stabilizing metric form is the negative of the neutral
+one. It has not been confused with the neutral form in the constructions below.
+
+The flux lemma is valid: an invertible central object's degree is central;
+a kernel object lies over the tensor unit and has self-braiding one. Anisotropy
+therefore makes the degree map on the stabilizing group injective. This also
+justifies the stated class-two restriction on all pointed presentations.
+
+The proof that E is canonical is complete. A cyclic quotient G would make
+Gamma abelian and all objects fixed; cyclic projective representations over C
+are one-dimensional, forcing the equivariantization to be pointed. Thus
+G=C_p^2. On the neutral A, the equivariance obstructions form a homomorphism
+A -> H^2(G,C^*)=C_p. Its kernel has at least p elements, each supplying p^2
+invertible lifts. CPS's upper bound p^3 forces equality and exhausts the
+invertibles. Anisotropy makes their twist-one subset exactly the p^2 lifts of
+the neutral unit. Every maximal Tannakian category has that dimension and is
+pointed, hence equals E. Therefore an arbitrary braided equivalence preserves
+the regular commutative algebra of E and de-equivariantizes to a crossed
+equivalence, allowing the stated automorphisms of G and the metric neutral A.
+An additional generic Morita search is not missing from the nonpointed branch.
+
+3. Full obstruction and the actual H^1 quotient
+
+Write H^*(G,F_p)=Lambda(x_1,x_2) tensor F_p[y_1,y_2], with y_i=beta(x_i),
+e=x_1 x_2 and kappa=C e+P_1 y_1+P_2 y_2. These are the commutator and power
+coordinates of the central extension. ENO's canonical odd-order quadratic
+Pontryagin-Whitehead formula applies without an extra shifted object action.
+After F_p -> C^*, the polynomial degree-four classes vanish; beta(e y_1)
+and beta(e y_2) are independent. Thus the obstruction vanishes exactly when
+B_A(C,P_1)=B_A(C,P_2)=0.
+
+If C=0, Gamma is abelian. Its obstruction map to H^2(G,C^*) has kernel at
+least p^3, which would give at least p^5 invertibles and violate CPS. Hence
+C is nonzero. Anisotropy gives C not in C^perp and makes the power image either
+zero or the single perpendicular line. There are no additional group types
+with power image in the commutator line to consider.
+
+The source correctly uses the Davydov-Nikshych correction, not an unrestricted
+H^3 torsor. I independently checked the Postnikov/slant computation of its
+actual H^1 action. The simply connected stage has pi_2=A, pi_3=C^*, with
+Postnikov invariant the quadratic form q. At odd order it is the quadratic
+half-cup-square model. A loop of the lower map is kappa+u lambda on BG x S^1;
+the square of u lambda vanishes, and slant of q(kappa+u lambda) is
+B_A(kappa,lambda). This is the comparison action in DN's cube, up to the
+irrelevant orientation convention for identifying the loop parameter.
+
+For zero powers its image is zero because e x_i=0. For powers T y_1, its
+image is exactly the span of x_1 y_1 and x_2 y_1: nondegeneracy makes the two
+coefficients arbitrary. The cokernel is restriction to K=ker P=<Y>, with
+basis x_2 y_2, and has p elements. The potential p^2 overcount from ignoring
+the H^1 action has genuinely been removed. This is an equivalence computation,
+not just an obstruction-zero parameter list.
+
+4. Zero-power models, prime 3, and their COMPLETE equivalence law
+
+The original Heisenberg cocycle phi has the stated central slant with
+trivializing half-braiding exp(-2 pi i a z/p). Its tensor correction on central
+degrees vanishes. I checked its cup-cochain identity and also verified the
+general polynomial cocycle and central-slant identities over Q in an independent
+symbolic check. Thus the general identity does not rely on the p=3 experiment.
+
+For p>3 the BCH formula chi_p has differential zero: the differential of its
+z term is -E cup E/4 and that of its Pluecker primitive is +E cup E/4.
+Both terms have exact GL_2 weight det^2. Its central self-braiding and slant
+give the source's coefficient -c. The independent symbolic calculation also
+verifies these identities over Q, hence in every permitted characteristic.
+
+The p=3 correction is essential and correct. For a cyclic generator (x,y,z),
+sum_i phi(g,g^i,g) equals -x^2 y^2: the sums of i vanish, and the exceptional
+sum of i^2 is -1 modulo 3. The carry cocycles add x^2+y^2, giving 1 at every
+nonzero vector of F_3^2 and zero at the origin, independently of z. The leading
+Heisenberg coefficient has weight det^2=1. A difference of its transforms with
+zero leading part is inflated binary quadratic cohomology; cyclic restriction
+detects that entire inflated summand. Consequently the corrected class is
+GL_2(F_3)-invariant, as asserted. This does not assume that an associated-graded
+representation splits equivariantly. The explicit cocycle supplies the lift.
+
+On Gamma_0=H_p x C_p the two central degrees and stated half-braidings form
+an elementary subgroup with quadratic form -c a^2-v b^2. Since v=-epsilon/c,
+it is anisotropic and its normalized Gauss sum is -1. The centralizer therefore
+has dimension p^6 and charge -1. The direct-product decomposition of Gamma_0
+and the specified embedding give exactly the asserted p^5 factor times q_v.
+If that factor were pointed its product with the stabilizing pointed line
+would make the Heisenberg centre pointed, contradicting its Rep(H_p) subcategory.
+
+The normalizations leave two square classes of commutator norm, c=1,epsilon.
+Once normalized, a lower-data stabilizer has determinant +1 or -1 on G.
+The chosen chi_p has no affine shift under these changes, including p=3;
+central section changes are accounted for by the zero H^1 action. The
+associator therefore transforms by ordinary binary quadratic congruence with
+determinant +/-1. Its orbits are exactly zero, the two rank-one square classes,
+and the p-1 nondegenerate determinant VALUES. For completeness, a nondegenerate
+binary form represents 1; choose such a vector and an orthogonal second vector
+with determinant 1 to obtain diag(1,det Q). This proves both existence and the
+absence of further square-class identification on the determinant. Hence
+there are p+2 forms per c, giving 2p+4 product classes.
+
+5. Rank-one-power models and the affine stabilizer issue
+
+The group Gamma_1 has precisely [X,Y]=Z, X^p=T and independent central Z,T
+of order p. The quotient coordinate r=x+p t is a homomorphism to C_{p^2}.
+Each factor of omega_{c,s} is a normalized cocycle: pullback of phi from H_p,
+the cyclic C_{p^2} cocycle of coefficient p v, and the carry cocycle s a_y.
+
+The displayed tau_{a,b} satisfies the central slant identity. The carry
+correction exp(2 pi i v x floor((b+b')/p)/p) is REQUIRED: it cancels the
+apparent character carry in tau_{a,b} tau_{a',b'}. Thus the chosen central
+section really is elementary of order p^2, with self-braiding
+exp(2 pi i(-c a^2-v b^2)/p). Its centralizer is a nonpointed modular category
+of the required dimension and charge. A choice of cocycle alone has not been
+mistaken for a compatible central lift.
+
+The H^1 quotient leaves exactly the cyclic restriction s on K=ker P. In a
+lower-data stabilizer, X maps to a X+b Y and Y to d Y, with a^2=d^2=1,
+because it preserves the norms of the power and commutator vectors. Thus its
+linear action on H^3(K,C^*) is multiplication by d^2=1.
+
+I checked the absence of an AFFINE shift as well, rather than inferring it
+merely from this linear action. An explicit way to make the source's short
+restriction argument fully transparent is to use the entire preimage
+Ktilde={x=0} in Gamma_1. The base omega_{c,0} is IDENTICALLY 1 on Ktilde^3:
+every term in phi and in the cyclic p^2 factor contains an x-coordinate.
+Any crossed equivalence induces an isomorphism of the underlying pointed
+degree groups and preserves A, the commutator, and the power map. It therefore
+preserves Ktilde. Pullback of the base cocycle is still trivial there.
+Restrict a possible cochain comparison further to the order-p subgroup <Y>.
+Inflation from K to Ktilde is injective on this restriction, since <Y> is
+a section. Consequently s' must equal d^2 s=s. Central changes of the lift
+of Y do not change this conclusion because the base is trivial on ALL of
+Ktilde, not only on a chosen generator. The H^1 action restricts to zero as
+already computed. This rules out precisely the hidden affine identification
+that would invalidate the claimed p-element residual parameter set.
+
+Every residual s is supplied by the explicit inflation of exp(2 pi i s a_y/p).
+The Postnikov classification and the computed H^1 quotient give exhaustion;
+the above restriction and commutator-norm invariant give distinctness. Thus
+there are p rank-one-power classes for each c, giving exactly 2p.
+
+6. Intrinsic groups, primeness, exponent, and all prior branches
+
+For Gamma_1, a central object has the stated section times a character with
+chi(X)=eta^k and chi(Y)=zeta^ell. Its monodromy with the whole embedded plane
+vanishes exactly when a=0 and k=2 v b modulo p. This yields p^3 invertibles,
+with group C_{p^2} x C_p. For b nonzero, the section has order p while the
+character contributes a nontrivial pth power. Their twists are zeta^{v b^2}.
+Thus every order-p invertible is a boson. In the zero-power models the
+corresponding group is elementary C_p^3. This separates the two branches
+intrinsically, independent of presentation.
+
+Any proper modular factor of an integral p^6 category has integer p-power
+dimension. CPS says a nonpointed one has dimension at least p^5. Therefore
+the only possible nontrivial factorization of a nonpointed p^6 category is a
+nonpointed p^5 factor times a pointed p factor. The prime models have no
+order-p invertible with nontrivial twist, so have no such factor. The p^5
+factor of each product model is itself prime by the same minimum-dimension
+argument. This proves the claimed prime/product consequences, not only a
+distinction of fusion groups.
+
+The exponent proof uses the precise Ng-Schauenburg formula. In Gamma_1 an
+element has order p^2 exactly when x is nonzero; then r(g) is a unit modulo
+p. The Heisenberg and y factors restrict from C_p and inflate trivially to
+C_{p^2}, because inflation in integral degree four multiplies by p^2. The
+remaining coefficient p v r(g)^2 has exact p-adic valuation one, so its
+cyclic class has order p. These subgroups contribute p^3, while order-p
+subgroups contribute at most p^2. The full centre and its complementary
+p^6 factor therefore have FS exponent p^3. The product exponent is p^2
+by CPS for its p^5 factor and exponent p for its pointed factor.
+
+DGNO gives charge +/-1 for this even prime-power dimension and identifies
+the charge-one branch with centres of pointed categories of dimension p^3.
+Maya-Mejia Castano-Uribe's Theorem 2.2 gives 5p+32 Morita classes, including
+47 at p=3. The source's remaining charge-minus-one pointed branch is the
+standard odd-primary metric Jordan decomposition with its correct Gauss-sum
+selection. Consequently the stated coverage of ALL categories is complete;
+the new nonpointed theorem has not been conflated with the prior branches.
+
+7. Exact prior and significance of the WHOLE result
+
+The fundamental core, maximal-isotropic, centre-realization and generic
+crossed-equivalence statements are prior. In particular:
+- CPS supplies the Tannakian/invertible bounds and the dimension-p^5 reduction.
+- DGNO supplies anisotropic cores, stabilizations, and the charge-one theorem.
+- ENO and DN supply the obstruction/lift framework and its H^1 correction.
+- Naidu classifies crossed pointed models and their general comparison cochains.
+- Mason-Ng and Gannon-Riesen supply the compatible central-lift/centralizer models.
+- Naidu-Nikshych supplies generic pointed-centre Morita equivalence criteria.
+- MMU supplies the charge-one p^3 Morita enumeration and needed Heisenberg cohomology.
+- Ng-Schauenburg supplies the cyclic restriction exponent formula.
+None is a new general method introduced by the candidate.
+
+I also checked two close sources beyond the fixed bibliography. Green-Nikshych,
+The Tannakian radical and the mantle of a braided fusion category, arXiv:2412.16722,
+Section 7.1, already classifies the p+1 integral nonpointed REDUCTIVE p^6
+categories; all are metabolic centres. Its reductivity hypothesis is material:
+the candidate's nonpointed charge-minus-one categories have the unique nontrivial
+maximal Tannakian category. The prior theorem does not enumerate this branch.
+Its canonical radical/mantle framework should be credited in the final account.
+
+Schopieray, Nondegenerate extensions of near-group braided fusion categories,
+arXiv:2109.04011v1, Section 6, supplies the extraspecial-centre realization of
+the p^5 factor and explicitly leaves the odd-prime braided classification open
+there. It does not supply these full parameter orbits or the p^6 prime branch.
+The published bibliographic year is 2023; the CPS reference's 2022 date should
+not be copied without updating it. This is editorial, not a mathematical repair.
+
+The actual advance is the COMPLETE new nonpointed charge-minus-one categorical
+classification for all odd p, with realized normal forms and their unmarked
+equivalence law, including the rank-one-power prime family and p=3 normalization.
+Together with the credited prior branches this completes a natural next
+prime-power dimension classification. Its explicit prime/product/exponent law
+has independent categorical content beyond a finite cohomology-orbit restatement.
+I find this a substantial journal-level whole result, worth ONE integrated paper.
+It should not be divided into a canonical-subcategory note, an H^1 note, an
+example construction, or a separate exponent computation.
+
+8. Independent checks and precise primary reading scope
+
+All three supplied frozen scripts passed. For the NumPy scripts I used
+"uv run --with numpy" because the system Python lacks NumPy. The original
+Heisenberg check passed all 27^4 p=3 cocycle equations and its slant/tensor
+checks. The prime check passed its chunked 81^4 p=3 equations and central
+section identities. The chi check passed its p=3 cyclic/GL2 check and p=5
+Pluecker check. No classification census or large dataset was generated.
+
+I additionally wrote and ran check_polynomial_identities.py in my OWN audit
+directory. It verifies the original and BCH cocycle and central-slant
+identities symbolically over Q. These computations support the universal
+cochain arguments; neither these nor the small supplied checks determine
+the classification or replace the equivalence/exhaustion reasoning above.
+
+Primary reading:
+- CPS arXiv:2404.06643: Section 4.2, COMPLETE supplied Lemma 2 and Proposition 2 proofs.
+- DGNO arXiv:0704.0195v2: COMPLETE supplied Proposition 3.9, Proposition 5.3,
+  Proposition 6.1 and Theorems 6.5-6.6 proofs; adjacent remarks/corollaries read.
+- GR arXiv:2410.00809: COMPLETE supplied Theorem 4.1 proof; Proposition 4.1 and
+  Section 4.3 model statements read. Its general Proposition 2.2 is quoted from
+  DMNO; I checked that statement and its hypotheses, not DMNO's entire earlier proof.
+- ENO arXiv:0909.3140: Propositions 7.3/7.6 and COMPLETE supplied 7.6 proof,
+  COMPLETE supplied Theorem 7.12 proof and Section 8.7 derivation through 8.15.
+- DN arXiv:2006.08022: COMPLETE supplied Proposition 2.24, Corollaries 2.25/2.27
+  proofs and Section 8.1 correction, including Corollary 8.7/Remark 8.8.
+- MMU arXiv:1808.05139: COMPLETE Section 1.4 Heisenberg cohomology/action
+  calculation; Section 2.7, Theorem 2.2, count and p=3 table scope read. I did
+  not independently redo Lewis's cohomology computation or the entire preceding
+  pointed Morita enumeration, which is a credited published input.
+- Ng-Schauenburg arXiv:math/0601012: COMPLETE Theorem 9.2 reduction and direct
+  cyclic derivation through Lemma 9.3; centre-invariance statement read.
+- ENO arXiv:math/0203060: COMPLETE Propositions 8.23/8.24 proofs and Theorem
+  8.28 proof, with their earlier general results used as published inputs.
+- Naidu, Pacific J. Math. 247 (2010): COMPLETE Proposition 4.2/Theorem 4.4
+  supplied proofs and Section 5 construction/statement of 5.3. Not the full
+  quasi-Hopf reconstruction or every quasiabelian-cochain identity.
+- Mason-Ng arXiv:1404.2016: Theorem 3.6 statement, COMPLETE supplied Theorem
+  5.5 proof and central-lift dependence warning. Not all earlier quotient proofs.
+- Naidu-Nikshych arXiv:0705.0665v2: Section 4.2 setup and short 4.17-4.20
+  reductions; I did not reaudit every intermediate projective-character lemma
+  or Naidu's nested explicit dual-cocycle construction.
+- Green-Nikshych arXiv:2412.16722: COMPLETE supplied Section 7.1 proofs of
+  Lemmas 7.4-7.5 and Proposition 7.6, with their scope; not the whole mantle theory.
+- Schopieray arXiv:2109.04011v1: COMPLETE supplied Section 6 Lemma 6.0.1 and
+  Proposition 6.0.2 proofs, not all earlier minimal-extension background.
+
+The report distinguishes direct proof verification, finite consistency checks,
+and use of previously published structural theorems. It does not claim an audit
+of every complete paper or of all nested references.
+
+9. Handoff
+
+The ENTIRE fixed candidate is correct, its closest prior does not subsume the
+new whole classification, and the result has sufficient significance for ONE
+integrated paper. The stronger preimage-K explanation in Section 5 of this
+report is a useful exposition of the existing affine-restriction argument;
+it changes neither the theorem nor its parameters. Explicitly state that
+explanation in the eventual paper and credit the close prior discussed above.
+These are proof-exposition/bibliographic recommendations, not unresolved
+conditions on correctness. Publication authorization remains the director's.

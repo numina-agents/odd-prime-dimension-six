@@ -1,13 +1,16 @@
 {
   "title": "Modular categories of dimension p^6 at odd primes",
   "author": "Antares",
-  "author_approved_utc": "2026-11-14 06:35",
-  "source_sha256": "b00ab078a433803532753464cbd42e321847dad6f267be0df61e1e2dc15b4e1c",
+  "version": "P20 v2 integrated revision",
+  "author_approval_message": 3946,
+  "source_sha256": "91020368a258913e73878324b7a0acf1e07d50ccb2a06e0d92cab29d4632042e",
+  "whole_assessment_message": 3938,
+  "whole_assessment_sha256": "429bac1cb47c21294a7e7e13eb5b70ffeccae852fde5c80ee76b54d434926c46",
   "files": [
     {
       "path": "README.md",
-      "bytes": 1347,
-      "sha256": "ef409d9b8c2b771704b8b648a06d1fb15ef9e83030d8e23963ab93a2a7b4da93"
+      "bytes": 2826,
+      "sha256": "ccba12853362f618a289f288b3f910919be2dc165b2cd251285b5a6c5faeb514"
     },
     {
       "path": "checks/check_chi.py",
@@ -18,6 +21,11 @@
       "path": "checks/check_control.py",
       "bytes": 1613,
       "sha256": "e94589304402d4a81aa1deeca0cb30dafc389442e7cf8bb65d8a8c737930f378"
+    },
+    {
+      "path": "checks/check_exponents.py",
+      "bytes": 3405,
+      "sha256": "03f856c44403ee5ca98451fac7338210c1121c5ffd65e6e294c4c96a7384dd1e"
     },
     {
       "path": "checks/check_polynomial_identities.py",
@@ -31,28 +39,94 @@
     },
     {
       "path": "paper/paper.pdf",
-      "bytes": 304314,
-      "sha256": "281e43ae32bcb4f6966b47f6d982f59aaa545b2f6f84fefb7b5becf4f79e2995"
+      "bytes": 310175,
+      "sha256": "073c39cd329520320d88212af5981e31a5af483153c38eec0a60eb148ef5d94f"
     },
     {
       "path": "paper/paper.tex",
-      "bytes": 26149,
-      "sha256": "b00ab078a433803532753464cbd42e321847dad6f267be0df61e1e2dc15b4e1c"
+      "bytes": 29380,
+      "sha256": "91020368a258913e73878324b7a0acf1e07d50ccb2a06e0d92cab29d4632042e"
     },
     {
       "path": "provenance/assessed-manifest.json",
+      "bytes": 8609,
+      "sha256": "edd960ffcc0a066f4f430e7e7862991aeceedeef12e46de3f7f5f127a4981b00"
+    },
+    {
+      "path": "provenance/author-approval.txt",
+      "bytes": 470,
+      "sha256": "6ac344f41672265fba96e5adb5a70880b65b6546d6860bdf0aa70e7b2809566a"
+    },
+    {
+      "path": "provenance/exponent-checks.txt",
+      "bytes": 394,
+      "sha256": "1ca2cd35d7e5ca82275aba2f2303c9bc4a91f1040017ae7b07858bdb9ab78bc6"
+    },
+    {
+      "path": "provenance/referee-v1.txt",
+      "bytes": 11028,
+      "sha256": "197136350a58a6f7615e91f674e37f54dfe920869174ff764ae64bcc20a431e2"
+    },
+    {
+      "path": "provenance/response-to-referee.txt",
+      "bytes": 1920,
+      "sha256": "1df586d31b53aa7c78de52e5c2ddda4b708516ee8857341542380379ef0ef01d"
+    },
+    {
+      "path": "provenance/revision-audit.txt",
+      "bytes": 7404,
+      "sha256": "e0f657e57365fc9099cd1c572fd46734417f585f633c5c94b0e0234d1b80948d"
+    },
+    {
+      "path": "provenance/source-difference.txt",
+      "bytes": 6231,
+      "sha256": "d830c0d39e4956f64c96be17e59619f2e746691c10974b8d818008eab0e5a4b8"
+    },
+    {
+      "path": "provenance/v1/HISTORICAL.txt",
+      "bytes": 553,
+      "sha256": "cfd4f353b925838f442e8d3c43baad4145ffaf7e2f238899fcf2b683c0c511df"
+    },
+    {
+      "path": "provenance/v1/README-original.md",
+      "bytes": 1347,
+      "sha256": "ef409d9b8c2b771704b8b648a06d1fb15ef9e83030d8e23963ab93a2a7b4da93"
+    },
+    {
+      "path": "provenance/v1/assessed-manifest.json",
       "bytes": 6533,
       "sha256": "d70ee2dc2b0a2f82bec5b1057b5c527f2f01d85d181223411f7bcf5cf5491720"
     },
     {
-      "path": "provenance/prior-audit.txt",
+      "path": "provenance/v1/paper/paper.pdf",
+      "bytes": 304314,
+      "sha256": "281e43ae32bcb4f6966b47f6d982f59aaa545b2f6f84fefb7b5becf4f79e2995"
+    },
+    {
+      "path": "provenance/v1/paper/paper.tex",
+      "bytes": 26149,
+      "sha256": "b00ab078a433803532753464cbd42e321847dad6f267be0df61e1e2dc15b4e1c"
+    },
+    {
+      "path": "provenance/v1/prior-audit.txt",
       "bytes": 8197,
       "sha256": "23226563506061ab47a7cf4fbbfad1230b1e601f4e2f05dded62cb198062054b"
     },
     {
-      "path": "provenance/whole-assessment.txt",
+      "path": "provenance/v1/publication-manifest.json",
+      "bytes": 1830,
+      "sha256": "66b00e157354e9eb7136fd651f448598f142e0db8a5578d1177bb2d4c228bca6"
+    },
+    {
+      "path": "provenance/v1/whole-assessment.txt",
       "bytes": 20999,
       "sha256": "c7076ec113c3972e53fa8d30ed8284f23403c526cb59e6f9333e8dee94da1548"
+    },
+    {
+      "path": "provenance/whole-assessment.txt",
+      "bytes": 27192,
+      "sha256": "429bac1cb47c21294a7e7e13eb5b70ffeccae852fde5c80ee76b54d434926c46"
     }
-  ]
+  ],
+  "author_approved_utc": "2026-11-14 07:10"
 }

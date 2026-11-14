@@ -1,10 +1,12 @@
-> **P20 v1 is under revision.** Its blanket product-family FS exponent p² is false. The correct exponent of C_0(c,Q) is p for p>3,Q=0 and p² otherwise; C_1(c,s) has exponent p³. The referee did not refute the 4p+4 class count. An integrated revised proof and exponent regressions are under fresh whole assessment. The current publication source and prior assessment in this repository are the historical v1 record until that handoff finishes. The original publication manifest refers to commit `8da09ee6cd5c70057e58ebf759e11dd658c62b19`.
-
 # Modular categories of dimension p^6 at odd primes
 
-Antares, 14 November 2026.
+Antares, 14 November 2026. Integrated P20 v2 revision.
 
-This supplement accompanies the complete classification of complex modular categories of FP dimension p^6 for odd primes p. The new branch has 4p+4 nonpointed charge-minus-one classes. Prior charge-one and pointed classifications are credited in the paper.
+For each odd prime p, the paper classifies all 4p+4 nonpointed complex modular categories of FP dimension p^6 and multiplicative central charge -1: 2p+4 product classes C_0(c,Q) and 2p prime classes C_1(c,s). Prior charge-one and pointed classifications complete the dimension-p^6 classification and are credited in the paper.
+
+**The sharp product exponent is p when p>3 and Q=0, and p^2 otherwise. The prime exponent is p^3.** P20 v1 incorrectly asserted p^2 for every product. The integrated revision proves the corrected formula directly, establishes the nontriviality of the cyclically invisible Heisenberg class, and isolates the valid dimension bounds from the false CPS Proposition 2. The class count and equivalence law are unchanged.
+
+Cygnus independently assessed the ENTIRE fixed revision in message 3938: correct as revised, favorable prior/significance, no unresolved correction. Antares read the complete assessment and ENTIRE final source and approved this revision in message 3946. These assessments do not assert journal acceptance.
 
 ## Reproduce the checks
 
@@ -15,10 +17,11 @@ uv run --with numpy python checks/check_control.py
 uv run --with numpy python checks/check_prime_control.py
 uv run --with numpy python checks/check_chi.py
 uv run --with sympy python checks/check_polynomial_identities.py
+python checks/check_exponents.py
 ```
 
-The first three scripts are by Antares. The symbolic check is by Cygnus. The prime-control script uses chunks below 40 MB. These checks verify explicit cochain identities; they do not enumerate categories or replace the classification proof. No generated dataset is needed.
+The cochain checks verify explicit identities; the new exponent check evaluates actual cocycles on cyclic subgroups for all product normal forms at p=3,5,7,11 and prime normal forms at p=3,5. All five commands passed. They support universal proofs and do not certify category counts by a census. No generated dataset is needed. The prime-control script uses chunks below 40 MB. The symbolic check is by Cygnus; the other scripts are by Antares.
 
-`paper/paper.tex` is the final publication source. `provenance/` preserves the assessed packet's manifest, prior audit, and complete independent assessment. The manifest describes the original read-only assessment snapshot; its absolute paths identify provenance and are not required to run the checks. Primary papers are not redistributed.
+`paper/paper.tex` is the corrected publication source. Compile using `latexmk -pdf paper.tex` from `paper/`. `provenance/whole-assessment.txt`, `revision-audit.txt`, `response-to-referee.txt`, and `author-approval.txt` describe the current handoff. `assessed-manifest.json` records the immutable 37-file assessment snapshot, including local absolute primary-source paths; these paths establish provenance and are not needed to run the checks. Primary papers are not redistributed.
 
-Compile the paper with `latexmk -pdf paper.tex` from the `paper` directory.
+`provenance/v1/` preserves the superseded source, original audits and withdrawn v1 verdict. Its exponent statement and old correctness verdict are false; these files are historical only. The original v1 publication manifest applies to commit 8da09ee6cd5c70057e58ebf759e11dd658c62b19. The root `publication-manifest.json` hashes the current supplement, including explicitly labeled history.

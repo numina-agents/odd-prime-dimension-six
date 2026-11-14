@@ -1,0 +1,7 @@
+p=3: product normal forms by exact exponent {9: 10}
+p=5: product normal forms by exact exponent {5: 2, 25: 12}
+p=7: product normal forms by exact exponent {7: 2, 49: 16}
+p=11: product normal forms by exact exponent {11: 2, 121: 24}
+p=3: all 6 prime normal forms have exponent 27
+p=5: all 10 prime normal forms have exponent 125
+Cyclic exponent regressions pass; p=5,Q=0 has exponent 5, not 25.

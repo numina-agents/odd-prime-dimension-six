@@ -110,7 +110,11 @@ Czenky--Plavnik--Schopieray \cite[Lemma 2]{CPS} give
 \begin{equation}\label{eq:invbound}
 p^2\leq |\Inv\cC|\leq p^3
 \end{equation}
-for a nonpointed modular category of dimension $p^6$.
+for a nonpointed modular category of dimension $p^6$. The same lemma implies
+that any nonpointed modular category of odd prime-power dimension has dimension
+at least $p^5$. These bounds are independent of the exponent assertion in
+\cite[Proposition 2]{CPS}, which is contradicted by the models discussed after
+Corollary~\ref{cor:exponent}; that assertion is not used here.
 
 \begin{lemma}\label{lem:flux}
 If an anisotropic pointed braided category $\cC(B,q_B)$ embeds braidedly in
@@ -416,18 +420,45 @@ which does not exist. Hence $\cC_1(c,s)$ is prime.
 \end{proof}
 
 \begin{corollary}\label{cor:exponent}
-The product models have Frobenius--Schur exponent $p^2$ and the prime models
-have Frobenius--Schur exponent $p^3$.
+For the product models,
+\[
+\operatorname{FSexp}\cC_0(c,Q)=
+\begin{cases}
+p,&p>3\text{ and }Q=0,\\
+p^2,&\text{otherwise}.
+\end{cases}
+\]
+The prime models $\cC_1(c,s)$ have Frobenius--Schur exponent $p^3$.
 \end{corollary}
 \begin{proof}
-The product assertion follows from \cite[Proposition 2]{CPS} for the
-dimension-$p^5$ factor and the exponent $p$ of its pointed factor.
 For a pointed category $\Vec_\Gamma^\omega$, the exponent of its centre is
 \[
 \mathop{\rm lcm}_{\langle g\rangle\leq\Gamma}
 |g|\,\operatorname{ord}(\omega|_{\langle g\rangle}),
 \]
-by \cite[Theorem 9.2]{NS}. In $\Gamma_1$, an element has order $p^2$
+by \cite[Theorem 9.2]{NS}. We apply this formula directly to both families.
+
+First $\Gamma_0=H_p\times C_p$ has exponent $p$. For $p>3$, the powers of
+$\gamma=(g,z,t)$ in BCH coordinates are $(mg,mz,mt)$. All quotient vectors
+in a cyclic subgroup are proportional, so every determinant in
+\eqref{eq:chi-large} is zero on that subgroup. Thus $\chi_p$ restricts
+identically to zero there. The cyclic invariant of $\omega_{c,Q}$ at a
+quotient vector $(u,w)$ is consequently $\zeta^{Q(u,w)}$. If $Q=0$, all
+cyclic restrictions are trivial and the centre has exponent $p$; if $Q\ne0$,
+some value of $Q$ is nonzero and the centre has exponent $p^2$.
+
+For $p=3$, the corrected class \eqref{eq:chi-three} has cyclic invariant
+exponent $1$ at every nonzero quotient vector. These restrictions cannot all
+be cancelled by $Q=aX^2+bXY+dY^2$: cancellation at $(1,0),(0,1)$ forces
+$a=d=-c$, whereas cancellation at $(1,1),(1,-1)$ would force both $b=c$
+and $b=-c$. Since $c\ne0$, this is impossible. Hence the centre has exponent
+$9$ for every product model. In all cases its stabilizing factor $\cB$
+has exponent $p$, and the pointed factor in \eqref{eq:product} gives
+$\operatorname{FSexp}\cC_0(c,Q)\ge p$. Taking least common multiples in
+$Z(\Vec_{\Gamma_0}^{\omega_{c,Q}})=\cB\boxtimes\cC_0(c,Q)$ proves the
+product formula.
+
+In $\Gamma_1$, an element has order $p^2$
 exactly when its $x$ coordinate is nonzero. On such a cyclic subgroup,
 the Heisenberg and $y$ factors in \eqref{eq:prime-omega} inflate from $C_p$
 and become cohomologically trivial: inflation on $H^4(-,\mathbb Z)$
@@ -436,6 +467,27 @@ $pv\,r(g)^2$ modulo $p^2$ and therefore order $p$. An order-$p$ cyclic
 subgroup contributes at most $p^2$. Thus the full centre has exponent $p^3$.
 The stabilizing factor has exponent $p$, so its centralizer has exponent $p^3$.
 \end{proof}
+
+\subsection*{The cyclic-detection issue in the prior exponent claim}
+For $p>3$ and $c\ne0$, the class of $\sigma_c=\zeta^{c\chi_p}$ on $H_p$
+is nonzero despite its trivial restrictions to every cyclic subgroup.
+Indeed its centre has the invertible central object of degree
+$Z=[X,Y]$ with self-braiding $\zeta^{-c}\ne1$, as computed above. If
+$\sigma_c$ were a coboundary, the identity-on-degrees tensor gauge to
+$\Vec_{H_p}$ would induce a braided equivalence of centres preserving
+this degree and self-braiding. In the untwisted centre, a central invertible
+over $Z$ has half-braiding a character $\lambda:H_p\to\C^\times$, so its
+self-braiding is $\lambda(Z)=1$, a contradiction.
+
+The proof of \cite[Proposition 2]{CPS} infers that trivial restrictions to
+all cyclic subgroups force this Heisenberg cocycle to be trivial. The
+classes $\sigma_c$ disprove that inference. More concretely, their
+nonpointed dimension-$p^5$ factor in \eqref{eq:product} has exponent $p$:
+it divides $p$, and cannot be $1$ in a nontrivial modular category by the
+balancing equation. Thus the proposition's asserted exponent $p^2$ is
+false for these models. The separate invertible bounds and minimum-dimension
+consequence of \cite[Lemma 2]{CPS}, used in our exhaustion and primeness
+arguments, have no dependence on that cyclic-detection inference.
 
 The two branches are inequivalent by their invertible groups. The first factor
 in \eqref{eq:product} is prime for the same minimum-dimension reason.
@@ -470,6 +522,9 @@ explicit check scripts and exact source provenance. The scripts
 $27^4$ and $81^4$ cocycle equations at $p=3$, together with central slants,
 tensor corrections and self-braidings. The script \texttt{check\_chi.py}
 checks the exceptional cyclic restrictions and the Pluecker primitive.
+The script \texttt{check\_exponents.py} evaluates the actual cocycles on
+cyclic subgroups for all product normal forms at $p=3,5,7,11$ and all prime
+normal forms at $p=3,5$, including the $p=5,Q=0$ counterexample.
 A separate symbolic check verifies the polynomial cocycle and central-slant
 identities over $\mathbb Q$. These are consistency checks of the explicit
 cochains; the equivalence and exhaustion proofs do not rely on a census.
@@ -478,7 +533,9 @@ cochains; the equivalence and exhaustion proofs do not rely on a census.
 We thank Phoebe for independent checks of the central-flux and canonical
 Tannakian reductions, and Cygnus for the complete independent assessment,
 the symbolic verification and the clearer preimage-$K$ exposition of the
-affine restriction argument. These results have not been checked by a human.
+affine restriction argument. We thank the referee for detecting the product
+exponent error in the first version and for the cyclic-restriction correction.
+These results have not been checked by a human.
 
 \begin{thebibliography}{99}
 \bibitem{ENO05} P. Etingof, D. Nikshych, and V. Ostrik,

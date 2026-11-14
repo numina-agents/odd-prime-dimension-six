@@ -1,36 +1,60 @@
 {
-  "scope": "Whole dimension-p6 candidate 3639; fixed source and complete supplementary/prior audit packet",
-  "frozen_at_utc": "2026-11-14 05:52",
-  "source_sha256": "b602ba1db0caeaec37dc673992101f5c2beb381b3c800c22e96655baa83fc26c",
-  "instructions": "Do not modify listed files. Actual corrections are separate/public. Manifest does not hash itself.",
+  "scope": "ENTIRE integrated P20 revision after referee 3845 and editor 3857; one whole correctness/prior/significance assessment",
+  "frozen_at_utc": "2026-11-14 07:03",
+  "instructions": "Do not mutate listed files. The original v1 correctness verdict is withdrawn; assess this complete revision. Actual corrections must be public/separate.",
   "files": [
     {
-      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen.tex",
-      "bytes": 23112,
-      "sha256": "b602ba1db0caeaec37dc673992101f5c2beb381b3c800c22e96655baa83fc26c"
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/paper.tex",
+      "bytes": 29380,
+      "sha256": "91020368a258913e73878324b7a0acf1e07d50ccb2a06e0d92cab29d4632042e"
     },
     {
-      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen.pdf",
-      "bytes": 300128,
-      "sha256": "66388adb01f7a05705888570229f1b8455f02b488f315c2d754df888637aaa1c"
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/paper.pdf",
+      "bytes": 310175,
+      "sha256": "073c39cd329520320d88212af5981e31a5af483153c38eec0a60eb148ef5d94f"
     },
     {
-      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/prior-audit.txt",
-      "bytes": 8197,
-      "sha256": "23226563506061ab47a7cf4fbbfad1230b1e601f4e2f05dded62cb198062054b"
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/revision-audit.txt",
+      "bytes": 7404,
+      "sha256": "e0f657e57365fc9099cd1c572fd46734417f585f633c5c94b0e0234d1b80948d"
     },
     {
-      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen-supplement/check_chi.py",
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/README.md",
+      "bytes": 1494,
+      "sha256": "c657b83633abb8acaeb7334b5baf8a1bc08e349723a0eeccdb17e1c842c8b48a"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/exponent-checks.txt",
+      "bytes": 394,
+      "sha256": "1ca2cd35d7e5ca82275aba2f2303c9bc4a91f1040017ae7b07858bdb9ab78bc6"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/referee-v1.txt",
+      "bytes": 11028,
+      "sha256": "197136350a58a6f7615e91f674e37f54dfe920869174ff764ae64bcc20a431e2"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/checks/check_chi.py",
       "bytes": 1315,
       "sha256": "5840b659f5a523cfba305af862f5173cc38f31b16a20fb9027b36aa8cab3a6b1"
     },
     {
-      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen-supplement/check_control.py",
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/checks/check_control.py",
       "bytes": 1613,
       "sha256": "e94589304402d4a81aa1deeca0cb30dafc389442e7cf8bb65d8a8c737930f378"
     },
     {
-      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen-supplement/check_prime_control.py",
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/checks/check_exponents.py",
+      "bytes": 3405,
+      "sha256": "03f856c44403ee5ca98451fac7338210c1121c5ffd65e6e294c4c96a7384dd1e"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/checks/check_polynomial_identities.py",
+      "bytes": 1264,
+      "sha256": "15ad5ea3468f50775431ca9336dd7c7b5fa6a8f358568804474aa75382368cfe"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/checks/check_prime_control.py",
       "bytes": 2022,
       "sha256": "4a1179a9bf86e36f3baced854e522e23b44a719b056f107e4150202c1de86bd1"
     },
@@ -143,6 +167,26 @@
       "path": "/home/agents/worlds/mtc/people/Antares/literature/naidu-nikshych-lagrangian-2008.txt",
       "bytes": 98277,
       "sha256": "be3edca330cbc6ab08b1f66e6087d4c8c475ea189c2bf00f8ef68248470fb34b"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Cygnus/research/dimension-p6-audit/green-nikshych-mantle.pdf",
+      "bytes": 579327,
+      "sha256": "dc1b439560d35237ab7de49ee1931001e80400ff5dac4f60232bc20d82cadf26"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Cygnus/research/dimension-p6-audit/green-nikshych-mantle.txt",
+      "bytes": 109816,
+      "sha256": "f64b221d642d174bbc9b3f0d2f2635a7139f2e7d4f213c93b23e4628eecbfd59"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Cygnus/research/dimension-p6-audit/schopieray-near-group-extensions.pdf",
+      "bytes": 322904,
+      "sha256": "97708c9ea4f65d0174a97ac2721effbce959cb1710042b30119adb7dcb0daf3d"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Cygnus/research/dimension-p6-audit/schopieray-near-group-extensions.txt",
+      "bytes": 92839,
+      "sha256": "ef5c0581145a750fb41ba7e3d5a0b7faea1307edd2b3cf52a085ef46fe7aab92"
     }
   ]
 }

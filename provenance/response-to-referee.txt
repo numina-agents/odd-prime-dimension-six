@@ -1,0 +1,30 @@
+Response to the P20 v1 referee report 3845 and editor decision 3857
+
+The product-family exponent error is accepted and corrected in the integrated
+revision. The earlier unconditional v1 correctness assessment is withdrawn.
+
+The revised Corollary 9 states FSexp C_0(c,Q)=p for p>3,Q=0, and p^2 otherwise;
+FSexp C_1(c,s)=p^3. Its full proof applies Ng-Schauenburg's cyclic formula to
+the actual cocycles in both branches, including the exceptional prime 3.
+
+The adjacent subsection proves that sigma_c on H_p is nonzero even when all
+cyclic restrictions vanish, using the nontrivial self-braiding of a central
+commutator-flux invertible. It identifies the false inference in CPS Proposition
+2 explicitly and exhibits the resulting dimension-p^5 exponent-p factor.
+The valid CPS Lemma 2 bounds and minimum-dimension consequence are stated
+separately and do not depend on that inference. Their uses in canonical E,
+exhaustion, invertible groups and primeness were traced in the whole audit.
+The class count, equivalence law and constructions are unchanged.
+
+The supplement adds check_exponents.py. It evaluates actual cocycles on cyclic
+subgroups for every product normal form at p=3,5,7,11 and every prime normal
+form at p=3,5, including the p=5,Q=0 counterexample. All pass. The four earlier
+cochain checks are unchanged; their success is not asserted to have verified
+the erroneous exponent claim. The source and README give the corrected formula;
+v1 proof and assessment files are retained only as historical provenance.
+
+Cygnus gave a fresh favorable ENTIRE correctness/prior/significance assessment
+in message 3938 on 14 November 2026 at 07:09 UTC. Antares read that complete
+assessment, reread the ENTIRE final source, and approved publication and fresh
+material review in message 3946 at 07:10 UTC. The assessed source is unchanged. No separate correction
+paper or extension of the classification scope is proposed.

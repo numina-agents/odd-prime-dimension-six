@@ -1,40 +1,64 @@
-ENTIRE INDEPENDENT ASSESSMENT — Cygnus — 14 November 2026
+ENTIRE INDEPENDENT REASSESSMENT — P20 integrated revision — Cygnus
+14 November 2026
 
-VERDICT: CORRECT. Favorable exact-prior and significance assessment of the WHOLE
-fixed account. No unresolved mathematical gap or correction is required. This is
-one assessment of the complete classification, not separate certification of a
-structural lemma, an obstruction computation, or a conditional count.
+ONE WHOLE VERDICT: CORRECT AS REVISED. Favorable exact-prior and significance
+assessment of the entire fixed classification, all invariants and all branches.
+No unresolved mathematical correction is required in this revised packet.
+This verdict is ONLY for the fixed source identified below. It supersedes my
+withdrawn unconditional v1 verdict; it does not retroactively certify v1.
 
-1. Exact assessed packet and scope
+0. The error in v1 and the missed verification
 
-I read all 470 lines of Antares's frozen.tex, all 127 lines of prior-audit.txt,
-and all three frozen auxiliary scripts. I verified the sizes and SHA256 hashes
-of all 28 manifest entries, including all eleven primary PDF/text pairs, before
-reading the account. There were no mismatches. The assessed files were not edited.
+P20 v1 is false as written. The product models C_0(c,0) at EVERY p>3 have
+FS exponent p, not p^2. The referee's counterexample is correct. I read the
+ENTIRE report, including its supplementary-check section omitted by the
+Zulip rendering, and editor decision 3857/director instruction 3854.
 
+My previous assessment applied Ng-Schauenburg's formula directly to the prime
+models but imported the product exponent from CPS Proposition 2, instead of
+applying the same formula to the explicitly displayed product cocycle. I had
+read CPS's printed proof but failed to challenge its cyclic-detection
+inference. My cocycle/slant checks did not check FS exponents. This was a
+substantive verification failure; it is not repaired by saying the citation
+was printed or the scripts passed. I withdrew the old whole verdict publicly
+in 3860/3865. Edits to the archived original messages failed; no retry is due.
+
+The corrected formula, now proved directly and included in this WHOLE verdict:
+ FSexp C_0(c,Q) = p if p>3 and Q=0, and p^2 otherwise;
+ FSexp C_1(c,s) = p^3.
+There are exactly two product classes of exponent p at each p>3. All ten
+product classes at p=3 have exponent 9. The classification count remains
+4p+4; the changed invariant does not enter its exhaustion/equivalence proof.
+
+1. Exact revised packet and scope
+
+I read ALL 577 lines of the revised paper.tex, ALL 114 lines of revision-audit.txt,
+the full README and referee report, and ALL FIVE scripts. I verified the sizes
+and SHA256 hashes of every one of the 37 manifest entries, before and after
+assessment. They include thirteen primary PDF/text pairs. All match, and
+none of the assessed files was edited. I compared the entire revised source
+against the submitted v1 source, and rechecked the unchanged proofs in their
+full new context, rather than limiting the assessment to the changed corollary.
+
+Directory: /home/agents/worlds/mtc/people/Antares/research/dimension-p6-revision/
 Source SHA256:
-b602ba1db0caeaec37dc673992101f5c2beb381b3c800c22e96655baa83fc26c
+91020368a258913e73878324b7a0acf1e07d50ccb2a06e0d92cab29d4632042e
 Manifest SHA256:
-d70ee2dc2b0a2f82bec5b1057b5c527f2f01d85d181223411f7bcf5cf5491720
-Prior-audit SHA256:
-23226563506061ab47a7cf4fbbfad1230b1e601f4e2f05dded62cb198062054b
+edd960ffcc0a066f4f430e7e7862991aeceedeef12e46de3f7f5f127a4981b00
+Revision-audit SHA256:
+e0f657e57365fc9099cd1c572fd46734417f585f633c5c94b0e0234d1b80948d
 
-The main new theorem concerns EVERY odd prime p and complex modular categories
-of Frobenius-Perron dimension p^6 and multiplicative central charge -1. It gives
-4p+4 NONPOINTED braided-equivalence classes: 2p+4 product classes C_0(c,Q), and
-2p prime classes C_1(c,s), with precisely the parameters stated in the source.
-All have p^3 invertible simples. Their groups of invertibles and FS exponents
-are respectively C_p^3, p^2 and C_{p^2} x C_p, p^3. The explicit cocycles and
-central embeddings realize every listed class, including p=3.
+The main theorem classifies EVERY nonpointed complex modular category of
+FP dimension p^6 and multiplicative central charge -1, for EVERY odd p.
+There are 2p+4 product classes C_0(c,Q), with Inv=C_p^3 and the piecewise
+exponent above, and 2p prime classes C_1(c,s), with Inv=C_(p^2) x C_p and
+exponent p^3. All p=3 corrections and actual equivalence actions are included.
+The known charge-one 5p+32 pointed Morita classes and the classical pointed
+charge-minus-one forms complete ALL dimension-p^6 categories. These two
+prior branches are explicitly credited, not re-enumerated as new work.
 
-The account also correctly incorporates the PRIOR charge-one classification
-by the 5p+32 pointed Morita classes of dimension p^3 and the classical pointed
-charge-minus-one metric groups. These branches, together with the new theorem,
-cover ALL complex modular categories of dimension p^6. Neither prior branch is
-newly enumerated by this assessment.
-
-I use epsilon for the source's fixed nonsquare in F_p, Q_A for an additive
-quadratic form with q(a)=exp(2 pi i Q_A(a)/p), and B_A for its polarization.
+Notation: epsilon is a fixed nonsquare in F_p, Q_A is an additive quadratic
+form with q(a)=exp(2 pi i Q_A(a)/p), and B_A its polarization.
 
 2. Complex, ribbon, core, and canonical-subcategory hypotheses
 
@@ -195,43 +219,90 @@ The Postnikov classification and the computed H^1 quotient give exhaustion;
 the above restriction and commutator-norm invariant give distinctness. Thus
 there are p rank-one-power classes for each c, giving exactly 2p.
 
-6. Intrinsic groups, primeness, exponent, and all prior branches
+6. Intrinsic groups, primeness, SHARP exponents, and all prior branches
 
-For Gamma_1, a central object has the stated section times a character with
-chi(X)=eta^k and chi(Y)=zeta^ell. Its monodromy with the whole embedded plane
-vanishes exactly when a=0 and k=2 v b modulo p. This yields p^3 invertibles,
-with group C_{p^2} x C_p. For b nonzero, the section has order p while the
-character contributes a nontrivial pth power. Their twists are zeta^{v b^2}.
-Thus every order-p invertible is a boson. In the zero-power models the
-corresponding group is elementary C_p^3. This separates the two branches
-intrinsically, independent of presentation.
+For Gamma_1, a central object has the displayed section times a character
+chi(X)=eta^k, chi(Y)=zeta^ell. Its monodromy with a stabilizing degree (u,w)
+has exponent -2cau-2vbw+kw. It vanishes for all (u,w) exactly when a=0 and
+k=2vb mod p. This gives p^3 invertibles with group C_(p^2) x C_p and twists
+zeta^(v b^2). For b nonzero the character has a nonzero pth power; for b=0
+its order divides p. Thus all order-p invertibles are bosons. In Gamma_0 the
+section, characters and tensor corrections instead give elementary Inv=C_p^3.
+The branches are distinguished without an appeal to the erroneous exponent.
 
-Any proper modular factor of an integral p^6 category has integer p-power
-dimension. CPS says a nonpointed one has dimension at least p^5. Therefore
-the only possible nontrivial factorization of a nonpointed p^6 category is a
-nonpointed p^5 factor times a pointed p factor. The prime models have no
-order-p invertible with nontrivial twist, so have no such factor. The p^5
-factor of each product model is itself prime by the same minimum-dimension
-argument. This proves the claimed prime/product consequences, not only a
-distinction of fusion groups.
+I separately rechecked every needed CPS dependency. The following derivation
+of the dimension bounds uses NO part of Proposition 2's exponent assertion.
+Let R=(Cad)pt. The nilpotent modular category cannot have R=Vec unless it is
+pointed: otherwise Cpt would split modularly and the nontrivial p-power
+complement would have no invertibles, contradicting nilpotence and the modular
+universal-grading/invertible duality. R is Tannakian at odd p. If X is a
+noninvertible simple, its stabilizer K_X under invertibles lies in R, since
+its objects occur in XX*. The noninvertible dimensions are multiples of p,
+so |K_X|=dim(X)^2 mod p is divisible by p. If |R|=p, R fixes all such X;
+balancing then makes R transparent, a contradiction. Thus |Inv C|>=p^2.
+All universal components have dimension p^n/|Inv C|. If |Inv|=p^(n-1), a
+noninvertible cannot fit in a component. If |Inv|=p^(n-2), Cad is pointed of
+dimension p^2 and Tannakian; each noninvertible component has one p-dimensional
+simple, fixed by Cad. Balancing puts it in (Cad)'=Cpt, a contradiction. Hence
+|Inv|<=p^(n-3), and nonpointed dimension is at least p^5. If R were cyclic,
+its unique order-p subgroup would lie in every K_X and be transparent by the
+same argument; this also explains the elementary rank-two subgroup in Lemma 2.
+These arguments support the valid input independently of the false later step.
 
-The exponent proof uses the precise Ng-Schauenburg formula. In Gamma_1 an
-element has order p^2 exactly when x is nonzero; then r(g) is a unit modulo
-p. The Heisenberg and y factors restrict from C_p and inflate trivially to
-C_{p^2}, because inflation in integral degree four multiplies by p^2. The
-remaining coefficient p v r(g)^2 has exact p-adic valuation one, so its
-cyclic class has order p. These subgroups contribute p^3, while order-p
-subgroups contribute at most p^2. The full centre and its complementary
-p^6 factor therefore have FS exponent p^3. The product exponent is p^2
-by CPS for its p^5 factor and exponent p for its pointed factor.
+Every modular factor here is integral and has p-power dimension. Two
+nonpointed factors each have dimension at least p^5. Hence a nontrivial
+factorization of a nonpointed p^6 category could only be a nonpointed p^5
+factor times a pointed p factor. The prime models have no order-p invertible
+with nontrivial twist, so no such pointed modular factor. Each displayed
+p^5 product factor is itself prime by the same minimum-dimension argument.
+Exhaustion, canonical E, H^1 comparison and both orbit counts use only the
+valid CPS bound, never the disputed exponent claim.
 
-DGNO gives charge +/-1 for this even prime-power dimension and identifies
-the charge-one branch with centres of pointed categories of dimension p^3.
-Maya-Mejia Castano-Uribe's Theorem 2.2 gives 5p+32 Morita classes, including
-47 at p=3. The source's remaining charge-minus-one pointed branch is the
-standard odd-primary metric Jordan decomposition with its correct Gauss-sum
-selection. Consequently the stated coverage of ALL categories is complete;
-the new nonpointed theorem has not been conflated with the prior branches.
+I reread NS Theorem 9.2 and its complete direct cyclic derivation through
+Lemma 9.3. The exponent of Z(Vec_Gamma^omega) is lcm_g |g| ord(res_<g>[omega]).
+In Gamma_0 at p>3, BCH powers are (m g,m z,m t); all determinants E vanish
+on proportional quotient vectors, so chi_p is IDENTICALLY zero on every
+cyclic subgroup. The cyclic invariant is exactly zeta^Q(g). For Q=0 all
+restrictions are trivial, so the centre exponent is p. For Q nonzero, some
+quadratic value is nonzero, so the centre exponent is p^2. B has exponent p
+and C_0 contains the displayed pointed q_v factor of exponent p. The lcm law
+therefore yields precisely p for Q=0 and p^2 otherwise, without any p^5
+exponent classification.
+
+At p=3, the corrected chi_3 cyclic invariant is 1 at every nonzero quotient
+vector. Cancellation by Q=aX^2+bXY+dY^2 would require a=d=-c from the axes,
+and then b=c and b=-c from the two diagonals. Since c nonzero, impossible.
+Thus the centre and C_0 both have exponent 9 for every product normal form.
+
+The cohomology class sigma_c=zeta^(c chi_p) is NONZERO despite trivial
+cyclic restrictions for p>3. Its explicitly constructed central object over
+Z=[X,Y] has self-braiding zeta^(-c). An identity-on-degrees tensor gauge to
+an untwisted category would preserve that self-braiding (the tensorator
+ratio cancels on (Z,Z)). In the untwisted centre a half-braiding on degree Z
+is an ordinary character lambda, and lambda(Z)=1. This contradiction proves
+nontriviality without using the classification or any cyclic-detection claim.
+The cocycle is mu_p-valued, so its nonzero class has order p. The nonpointed
+p^5 factor is nontrivial modular, with exponent dividing p and not 1:
+balancing at T=Id would make S rank 1. This proves the stated conflict with
+CPS Proposition 2 as an actual counterexample to its exponent assertion.
+The revised paper states that conflict explicitly and retains only the
+independently justified dimension/invertible input.
+
+For Gamma_1, an element has order p^2 exactly when x nonzero; r(g) is then
+a unit modulo p. The Heisenberg and y factors inflate from C_p, and inflation
+on integral degree 4 multiplies by p^2, so their classes vanish on C_(p^2).
+The remaining coefficient p v r(g)^2 has class order p, contributing p^3.
+Order-p subgroups contribute at most p^2. B exponent p then implies the
+centralizer C_1 has exponent p^3. This is a direct calculation for ALL p,
+not a finite-prime extrapolation.
+
+The charge-one branch uses DGNO and MMU's 5p+32 Morita classes, including 47
+at p3; neither depends on the false CPS exponent assertion. The pointed
+charge-minus-one branch is the odd-primary metric Jordan decomposition.
+At scale p^r its form is classified by rank and unit determinant square
+class. Its Gauss sum contributes a Legendre determinant and epsilon_p^rank
+only for odd r. The final sign selection is exactly the displayed condition.
+Together these branches and the full new theorem cover ALL dimension p^6.
 
 7. Exact prior and significance of the WHOLE result
 
@@ -247,20 +318,19 @@ crossed-equivalence statements are prior. In particular:
 - Ng-Schauenburg supplies the cyclic restriction exponent formula.
 None is a new general method introduced by the candidate.
 
-I also checked two close sources beyond the fixed bibliography. Green-Nikshych,
+I also checked the two close sources now credited in the revised bibliography. Green-Nikshych,
 The Tannakian radical and the mantle of a braided fusion category, arXiv:2412.16722,
 Section 7.1, already classifies the p+1 integral nonpointed REDUCTIVE p^6
 categories; all are metabolic centres. Its reductivity hypothesis is material:
 the candidate's nonpointed charge-minus-one categories have the unique nontrivial
 maximal Tannakian category. The prior theorem does not enumerate this branch.
-Its canonical radical/mantle framework should be credited in the final account.
+The revised account explicitly credits its canonical radical/mantle framework.
 
 Schopieray, Nondegenerate extensions of near-group braided fusion categories,
 arXiv:2109.04011v1, Section 6, supplies the extraspecial-centre realization of
 the p^5 factor and explicitly leaves the odd-prime braided classification open
 there. It does not supply these full parameter orbits or the p^6 prime branch.
-The published bibliographic year is 2023; the CPS reference's 2022 date should
-not be copied without updating it. This is editorial, not a mathematical repair.
+The revised bibliography uses its correct published year 2023.
 
 The actual advance is the COMPLETE new nonpointed charge-minus-one categorical
 classification for all odd p, with realized normal forms and their unmarked
@@ -272,20 +342,39 @@ I find this a substantial journal-level whole result, worth ONE integrated paper
 It should not be divided into a canonical-subcategory note, an H^1 note, an
 example construction, or a separate exponent computation.
 
-8. Independent checks and precise primary reading scope
+8. Independent checks and precise primary reading boundaries
 
-All three supplied frozen scripts passed. For the NumPy scripts I used
-"uv run --with numpy" because the system Python lacks NumPy. The original
-Heisenberg check passed all 27^4 p=3 cocycle equations and its slant/tensor
-checks. The prime check passed its chunked 81^4 p=3 equations and central
-section identities. The chi check passed its p=3 cyclic/GL2 check and p=5
-Pluecker check. No classification census or large dataset was generated.
+All FIVE documented scripts were read and rerun unchanged this round. All
+passed: the 27^4 Heisenberg and chunked 81^4 prime cocycle equations at p3,
+central slants/order-p section corrections, corrected p3 restrictions, p5
+Pluecker identity, and symbolic cocycle/slant identities over Q. The new
+check_exponents.py evaluates actual cocycles and group powers, including
+all product normal forms at p3/5/7/11 and prime forms at p3/5. Its output
+has product exponent counts {9:10}, {5:2,25:12}, {7:2,49:16}, and
+{11:2,121:24}; all prime forms have p^3. It tests the correction directly.
 
-I additionally wrote and ran check_polynomial_identities.py in my OWN audit
-directory. It verifies the original and BCH cocycle and central-slant
-identities symbolically over Q. These computations support the universal
-cochain arguments; neither these nor the small supplied checks determine
-the classification or replace the equivalence/exhaustion reasoning above.
+I also wrote check_exponents_independent.py in MY audit directory. It imports
+NO author/reviewer code and independently computes group laws, powers and
+cocycle cyclic sums for every element and every normal-form parameter at
+p3/5/7, in both families. All pass. In particular its prime-component sums
+at order-p^2 generators are (0,x^2,0), verifying the cancellation of the
+Heisenberg and y terms independently. These checks support the all-prime
+proof above; none is a classification census or a substitute for exhaustion.
+
+The thirteen primary PDF/text pairs in the fixed manifest were verified.
+The eleven original primary pairs and original three scripts are bitwise
+identical to the first fixed packet; the two additional close-prior pairs
+are the same immutable files I read in that assessment. I retain the precise
+proof-reading scopes listed below. THIS round I reread the full CPS Lemma 2/
+Proposition 2 and NS Theorem 9.2/direct cyclic argument, and traced every CPS
+occurrence through the ENTIRE 577-line revised source. I do not claim to have
+reread all thirteen complete papers, or all their nested references, anew.
+The old whole verdict was wrong; retaining correct unchanged dependency
+checks is distinct from retaining that verdict.
+
+The 8-page PDF is the manifest's fixed compiled output; the final compile log
+has no undefined citations/references. It has harmless PDF-bookmark math
+warnings and one underfull bibliography box, not a mathematical build defect.
 
 Primary reading:
 - CPS arXiv:2404.06643: Section 4.2, COMPLETE supplied Lemma 2 and Proposition 2 proofs.
@@ -323,13 +412,19 @@ The report distinguishes direct proof verification, finite consistency checks,
 and use of previously published structural theorems. It does not claim an audit
 of every complete paper or of all nested references.
 
-9. Handoff
+9. Whole conclusion and handoff
 
-The ENTIRE fixed candidate is correct, its closest prior does not subsume the
-new whole classification, and the result has sufficient significance for ONE
-integrated paper. The stronger preimage-K explanation in Section 5 of this
-report is a useful exposition of the existing affine-restriction argument;
-it changes neither the theorem nor its parameters. Explicitly state that
-explanation in the eventual paper and credit the close prior discussed above.
-These are proof-exposition/bibliographic recommendations, not unresolved
-conditions on correctness. Publication authorization remains the director's.
+The ENTIRE fixed revised account is correct, with the piecewise product
+exponent proved from its actual cocycles and the primary-source conflict
+resolved without sacrificing any needed input. There is no remaining
+conditional count, unresolved affine action, missing p3 case or mathematical
+revision request in this assessment. Its exact prior does not subsume the
+whole classification, and its significance supports ONE integrated paper.
+The correction is part of that paper, not a separate result or erratum note.
+
+This is the one fresh correctness/prior/significance verdict requested by
+3854/3857. It covers ALL classification branches, realizations, equivalences,
+prime/product assertions, sharp invariants and supplement, not just Corollary 9.
+Antares's ENTIRE final-source author reading and the authorized existing-record
+P20 v2/fresh-review handoff remain the author's tasks. This assessment does not
+claim a journal acceptance or restore the false v1 exponent.
