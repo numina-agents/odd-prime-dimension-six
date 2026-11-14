@@ -1,0 +1,520 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newcommand{\Fp}{\mathbb F_p}
+\newcommand{\C}{\mathbb C}
+\renewcommand{\Vec}{\operatorname{Vec}}
+\newcommand{\Rep}{\operatorname{Rep}}
+\newcommand{\FPdim}{\operatorname{FPdim}}
+\newcommand{\Inv}{\operatorname{Inv}}
+\newcommand{\PW}{\operatorname{PW}}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cA}{\mathcal A}
+\title{Modular categories of dimension $p^6$ at odd primes}
+\author{Antares}
+\date{14 November 2026}
+\begin{document}
+\begin{abstract}
+For every odd prime $p$, we classify the nonpointed complex modular categories
+of Frobenius--Perron dimension $p^6$ and multiplicative central charge $-1$.
+There are exactly $4p+4$ braided equivalence classes: $2p+4$ products of a prime
+category of dimension $p^5$ with a pointed category of dimension $p$, and $2p$
+prime categories. We give explicit cocycles and central embeddings realizing
+all classes, compute the complete equivalence action, and determine their
+invertible groups and Frobenius--Schur exponents. Together with the known
+charge-one and pointed classifications, this completes the classification
+in dimension $p^6$.
+\end{abstract}
+\maketitle
+
+\section{Scope and classification}
+Throughout $p$ is an odd prime, $\epsilon\in\Fp^\times$ is a fixed nonsquare,
+$\zeta=\exp(2\pi i/p)$, and $\eta=\exp(2\pi i/p^2)$.
+All categories are complex fusion categories. A modular category includes a
+ribbon structure. Write $\xi$ for its multiplicative central charge.
+Categories of odd prime-power Frobenius--Perron dimension are integral and
+pseudo-unitary; see \cite[Propositions 8.23--8.24 and Theorem 8.28]{ENO05}.
+Their ribbon structure is unique: the ambiguity of ribbon structures in a nondegenerate
+braided category is its group of invertibles of order two, which here is trivial.
+Thus the given ribbon structure is the positive one and braided equivalences
+preserve $\xi$.
+
+\begin{theorem}\label{thm:main}
+There are exactly $4p+4$ braided equivalence classes of nonpointed modular
+categories $\cC$ with $\FPdim\cC=p^6$ and $\xi(\cC)=-1$.
+They consist of the following pairwise distinct classes.
+\begin{enumerate}
+\item Product classes $\cC_0(c,Q)$, where $c\in\{1,\epsilon\}$ and
+\[
+ Q\in\{0,\ X^2,\ \epsilon X^2,\ X^2+dY^2\ (d\in\Fp^\times)\}.
+\]
+Each is the product of a prime modular category of dimension $p^5$ and a
+pointed modular category of dimension $p$.
+\item Prime classes $\cC_1(c,s)$, where $c\in\{1,\epsilon\}$ and $s\in\Fp$.
+Their invertible group is $C_{p^2}\times C_p$; every invertible of order $p$
+has twist one.
+\end{enumerate}
+All nonpointed categories in this theorem have $p^3$ invertible simples.
+The constructions and complete equivalence criteria are given below.
+\end{theorem}
+
+The prior classification machinery is substantial. DGNO's anisotropic-core
+and maximal-isotropic theory \cite{DGNO}, ENO's extension obstruction theory
+\cite{ENO}, and the associator-equivalence correction of Davydov--Nikshych
+\cite{DN} are inputs. Crossed pointed categories and their comparison cochains
+were classified by Naidu \cite{Naidu}; compatible central lifts and cleft
+quotients were studied by Mason--Ng \cite{MN}, and the pointed-centre Morita
+criterion by Naidu--Nikshych \cite{NN}. We use the centralizer model of
+Gannon--Riesen \cite{GR}. The new content is the explicit all-prime normal forms,
+their complete unmarked equivalence law, and the prime/product consequences.
+
+Two close classifications have different scopes. Green--Nikshych
+\cite[Section 7.1, Proposition 7.6]{GN} classify the $p+1$ integral nonpointed
+\emph{reductive} categories of dimension $p^6$; these are metabolic centres.
+The categories of Theorem~\ref{thm:main} instead have a unique nontrivial maximal
+Tannakian subcategory. Schopieray \cite[Section 6]{Schopieray} gives the
+extraspecial-centre realization underlying the dimension-$p^5$ setting, while
+leaving its odd-prime braided classification open there. Neither result gives
+the parameter orbits or prime dimension-$p^6$ family below.
+
+\section{Prior reductions and a canonical subcategory}
+The following are prior results. The maximal-isotropic theory of DGNO
+\cite{DGNO} identifies the anisotropic metric core of an integral nilpotent
+modular category. If $\FPdim\cC=p^6$ and $\xi(\cC)=-1$, a maximal Tannakian
+subcategory $E$ has dimension $p^2$, and its local de-equivariantization is an
+anisotropic pointed modular category $\cA=\cC(A,q)$ of dimension $p^2$.
+Here necessarily $A=C_p^2$. Its full de-equivariantization is a braided
+$G$-crossed category, where $E=\Rep(G)$ and $|G|=p^2$.
+The orthogonal group of an anisotropic plane has order $2(p+1)$, prime to $p$,
+so the action $G\to O(A,q)$ is trivial.
+Gannon--Riesen \cite[Theorem 4.1]{GR} then makes the full de-equivariantization
+pointed, say $\Vec_\Gamma^\omega$, with a central extension
+\[
+1\longrightarrow A\longrightarrow\Gamma\longrightarrow G\longrightarrow1.
+\]
+Its centre has the specified factorization
+\begin{equation}\label{eq:stabilize}
+Z(\Vec_\Gamma^\omega)\simeq\cA^{\rm rev}\boxtimes\cC.
+\end{equation}
+The complement is $\cA^{\rm rev}$, not $\cA$; this sign convention will matter
+in the explicit formulas.
+Czenky--Plavnik--Schopieray \cite[Lemma 2]{CPS} give
+\begin{equation}\label{eq:invbound}
+p^2\leq |\Inv\cC|\leq p^3
+\end{equation}
+for a nonpointed modular category of dimension $p^6$.
+
+\begin{lemma}\label{lem:flux}
+If an anisotropic pointed braided category $\cC(B,q_B)$ embeds braidedly in
+$Z(\Vec_K^\omega)$, its forgetful degree map $B\to K$ is injective and has
+central image.
+\end{lemma}
+\begin{proof}
+An invertible central object has an invertible underlying degree $k_b$;
+half-braiding with every degree forces $k_b\in Z(K)$. Degrees multiply under
+tensor product. A kernel object lies over the unit and its self-braiding is one,
+by the unit axiom and naturality of a half-braiding. Thus $q_B(b)=1$, and
+anisotropy forces $b=0$.
+\end{proof}
+Consequently every pointed presentation of \eqref{eq:stabilize} has degree
+group of order $p^4$ with a central injected $C_p^2$, hence has class at most two.
+
+\begin{lemma}\label{lem:canonical}
+If $\cC$ is nonpointed with dimension $p^6$ and charge $-1$, then $G=C_p^2$,
+$|\Inv\cC|=p^3$, and $E$ is the unique maximal Tannakian subcategory.
+Its simples are exactly the invertibles of twist one.
+\end{lemma}
+\begin{proof}
+If $G=C_{p^2}$, its central extension $\Gamma$ is abelian. The crossed object
+action is conjugation by a lift, hence fixes every object. All complex projective
+irreducibles of cyclic $G$ are one-dimensional, so the equivariantization would
+be pointed. Thus $G=C_p^2$.
+For each fixed neutral simple $a\in A$ let $\alpha_a\in H^2(G,\C^\times)$ be
+its equivariance obstruction. Tensor coherence gives
+$[\alpha_{a+b}]=[\alpha_a][\alpha_b]$. Since $H^2(C_p^2,\C^\times)=C_p$,
+the kernel has order at least $p$. Each kernel element has $p^2$ invertible
+equivariant lifts. The bound \eqref{eq:invbound} forces equality, a kernel line
+$M\subset A$, and exhaustion of the invertibles by these lifts.
+Their twists are the pullbacks of $q|_M$. Anisotropy makes the twist-one
+invertibles exactly the $p^2$ lifts of the neutral unit, namely $E$.
+Every maximal Tannakian subcategory has dimension $p^2$ by the anisotropic-core
+reduction, and is pointed since every group of order $p^2$ is abelian. It must
+therefore equal $E$.
+\end{proof}
+Thus braided equivalences preserve $E$ and induce equivalences of the full
+crossed categories, allowing an automorphism of $G$ and a metric automorphism
+of $A$. Generic pointed Morita equivalence is not required for the nonpointed
+branch after this reduction.
+
+\section{The obstruction and equivalences of its trivializations}
+Write
+\[
+H^*(G,\Fp)=\Lambda(x_1,x_2)\otimes\Fp[y_1,y_2],\qquad y_i=\beta(x_i),
+\]
+where $\beta$ is the mod-$p$ Bockstein. Put $e=x_1x_2$. A trivial-action class
+has unique coordinates
+\begin{equation}\label{eq:kappa}
+\kappa=C e+P_1y_1+P_2y_2\in H^2(G,A).
+\end{equation}
+Here $C$ is the commutator vector and $P_i$ are the power vectors of $\Gamma$.
+Write $q(a)=\zeta^{Q_A(a)}$ and
+$B_A(a,b)=Q_A(a+b)-Q_A(a)-Q_A(b)$.
+
+\begin{proposition}\label{prop:obstruction}
+The associativity obstruction vanishes if and only if
+$B_A(C,P_1)=B_A(C,P_2)=0$.
+For a nonpointed equivariantization $C\ne0$. Thus its power map has rank zero
+or one, with image contained in the line $C^\perp\ne\langle C\rangle$.
+\end{proposition}
+\begin{proof}
+ENO's odd-order Pontryagin--Whitehead formula
+\cite[Proposition 8.13]{ENO} is the image of $Q_A(\kappa)$ under
+$\Fp\to\C^\times$, $1\mapsto\zeta$.
+The three polynomial classes $y_1^2,y_1y_2,y_2^2$ map to zero in
+$H^4(G,\C^\times)$. The two remaining basis elements $ey_i$ have independent
+Bocksteins
+\[
+\beta(ey_1)=y_1^2x_2-x_1y_1y_2,\qquad
+\beta(ey_2)=y_1y_2x_2-x_1y_2^2.
+\]
+These identify the two-dimensional $H^4(G,\C^\times)$, and their coefficients
+in $Q_A(\kappa)$ are $B_A(C,P_i)$. This proves the criterion.
+If $C=0$, then $\Gamma$ is abelian and the action fixes all $p^4$ simples.
+Their obstruction homomorphism to $H^2(G,\C^\times)=C_p$ has kernel of order
+at least $p^3$, producing at least $p^5$ invertibles, contrary to
+\eqref{eq:invbound}. Finally anisotropy gives the stated orthogonal line.
+\end{proof}
+
+\subsection{The $H^1$ identification}
+It is essential to include the correction in
+\cite[Corollaries 2.25, 2.27 and Remark 8.8]{DN}:
+associator equivalence classes form a torsor over a cokernel, not automatically
+over all of $H^3(G,\C^\times)$.
+
+\begin{proposition}\label{prop:h1}
+For the trivial object action on the odd metric group $A$, the automorphism
+$\lambda\in H^1(G,A)$ of the lower extension data acts on the associator
+torsor by translation by
+\begin{equation}\label{eq:h1}
+B_A(\kappa,\lambda)\in H^3(G,\C^\times).
+\end{equation}
+Here the pairing is applied to cup product, followed by $1\mapsto\zeta$.
+\end{proposition}
+\begin{proof}[Proof of the full action]
+The identity-component Postnikov stage of $B\operatorname{Pic}(\cA)$ has
+$\pi_2=A$, $\pi_3=\C^\times$ and quadratic invariant $q$
+\cite[Propositions 7.3 and 7.6]{ENO}; equivalently it is
+the homotopy fibre of the quadratic map
+$K(A,2)\to K(\C^\times,4)$. This is the odd-order quadratic model underlying
+ENO's formula. A loop of the lower map, represented by $\lambda$, gives the
+class $\kappa+u\lambda$ on $BG\times S^1$, with $u$ the generator of
+$H^1(S^1,\mathbb Z)$. Polarization and $u^2=0$ give
+\[
+q(\kappa+u\lambda)=q(\kappa)+uB_A(\kappa,\lambda).
+\]
+Slanting with the circle gives \eqref{eq:h1}, precisely the comparison cube
+of \cite[Proposition 2.24]{DN}. This computation must be retained when
+passing from fixed products to equivalences of crossed extensions.
+\end{proof}
+
+The group $H^3(G,\C^\times)$ is the space of binary quadratic forms. In the
+coordinates above its basis is represented by $x_1y_1,x_1y_2,x_2y_2$; their
+Bocksteins are $y_1^2,y_1y_2,y_2^2$.
+If $P_i=0$, \eqref{eq:h1} is zero, since $e\lambda=0$ in cohomology.
+If $\kappa=C e+T y_1$, with $Q_A(T)\ne0$, its image is the two-dimensional
+space spanned by $x_1y_1,x_2y_1$. The cokernel is canonically restriction to
+the line $\ker P\subset G$ and is one-dimensional.
+
+\section{Explicit cocycles and the product normal forms}
+For any group with quotient coordinates $(x,y)\in\Fp^2$ put
+\[
+a_x(g,h,k)=x_g\Big\lfloor\frac{x_h+x_k}{p}\Big\rfloor,\quad
+a_y(g,h,k)=y_g\Big\lfloor\frac{y_h+y_k}{p}\Big\rfloor,
+\]
+and $a_{xy}(g,h,k)=x_g\lfloor(y_h+y_k)/p\rfloor$, using representatives
+$0,\ldots,p-1$. These exponents give normalized three-cocycles.
+For $Q=aX^2+bXY+dY^2$ let $\alpha_Q=\zeta^{aa_x+ba_{xy}+da_y}$.
+They represent all of $H^3(C_p^2,\C^\times)$; restriction to a cyclic subgroup
+of generator $(u,v)$ has invariant $\zeta^{Q(u,v)}$.
+
+In original coordinates the Heisenberg group $H_p$ has law
+$(x,y,z)(u,v,w)=(x+u,y+v,z+w+xv)$. The exponent
+\begin{equation}\label{eq:phi}
+\phi(g,h,k)=z_gx_hy_k+\tfrac12x_g^2y_hy_k+x_gx_hy_hy_k
+\end{equation}
+is a three-cocycle. Indeed $\delta z=-x\smile y$, and
+\[
+\delta(\tfrac12x^2\smile y\smile y+x\smile(xy)\smile y)
+=(x\smile y)^2.
+\]
+Its central slant is trivialized by $t_a(g)=\zeta^{-a z_g}$, and its central
+tensor corrections vanish.
+
+\subsection{An equivariant Heisenberg class, including $p=3$}
+For $p>3$ use BCH coordinates with law
+$(g,z)(h,w)=(g+h,z+w+E(g,h)/2)$, where $E(g,h)=\det(g,h)$ on $\Fp^2$.
+Set $F_1=E(g,h)E(h,k)$, $F_2=E(g,h)E(g,k)$, and
+\begin{equation}\label{eq:chi-large}
+\chi_p(g,h,k)=\tfrac12z_gE(h,k)+\tfrac1{12}(2F_1+F_2).
+\end{equation}
+The Pluecker identity gives $\delta(2F_1+F_2)=3E\smile E$, proving
+$\delta\chi_p=0$. It transforms exactly by $\det(M)^2$ under $M\in GL_2(\Fp)$.
+Its central self-braiding is $\zeta^{-a^2}$.
+
+For $p=3$ use original coordinates and define
+\begin{equation}\label{eq:chi-three}
+\chi_3=\phi+a_x+a_y.
+\end{equation}
+This correction is essential. For a generator $g=(x,y,z)$ the cyclic
+restriction invariant of $\zeta^\phi$ has exponent $-x^2y^2$.
+Adding $a_x+a_y$ makes it $1$ at every nonzero $(x,y)\in\mathbb F_3^2$,
+and $0$ at zero. The leading Heisenberg spectral-sequence coefficient transforms
+by $\det(M)^2$. Differences with zero leading coefficient are inflated binary
+quadratic classes, detected by these cyclic restrictions; see the degree-four
+calculation in \cite[Section 1.4]{MMU}. Since $\det(M)^2=1$ at $p=3$, the
+class of \eqref{eq:chi-three} is $GL_2(\mathbb F_3)$-invariant.
+Thus for all odd $p$ one has a chosen Heisenberg class of weight $\det^2$ and
+an independently transforming inflated binary quadratic summand.
+
+Fix $c\in\{1,\epsilon\}$ and set $v=-\epsilon/c$. Define
+$\omega_{c,Q}=\zeta^{c\chi_p}\alpha_Q$ on $H_p$ and inflate it to
+$\Gamma_0=H_p\times C_p$, whose last coordinate is $t$.
+The centre contains the central pointed factor $\cB$ on degrees $(aZ,bT)$,
+with self-braiding $\zeta^{-ca^2-vb^2}$. Here $Z$ and $T$ are the central
+coordinate generators. Its half-braidings are
+$\zeta^{-ca z_g-vbt_g}$, with the relevant Heisenberg coordinate used in
+\eqref{eq:chi-large} or \eqref{eq:chi-three}.
+Set
+\[
+\cC_0(c,Q)=\cB'\subset Z(\Vec_{\Gamma_0}^{\omega_{c,Q}}).
+\]
+The form of $\cB$ is anisotropic because $-cv=\epsilon$. Its normalized Gauss
+sum is $-1$, so $\xi(\cC_0)=-1$. It factors as
+\begin{equation}\label{eq:product}
+\cC_0(c,Q)\simeq
+\bigl(\cC(C_p,q_{-c})'\subset Z(\Vec_{H_p}^{\omega_{c,Q}})\bigr)
+\boxtimes\cC(C_p,q_v).
+\end{equation}
+Here $q_a(u)=\zeta^{a u^2}$; the first factor has dimension $p^5$ and is
+nonpointed because the centre contains $\Rep(H_p)$. The displayed central
+section and every character of $\Gamma_0$ have order $p$, so the $p^3$
+invertibles of $\cC_0(c,Q)$ form $C_p^3$.
+
+\begin{proposition}\label{prop:product-orbits}
+The categories with zero power map have precisely the normal forms
+$\cC_0(c,Q)$ in Theorem~\ref{thm:main}; their parameters in that list are unique.
+\end{proposition}
+\begin{proof}
+The commutator norm has two square classes, normalized to $c=1,\epsilon$.
+The orthogonal complement is normalized to coefficient $v=-\epsilon/c$.
+With these fixed, the metric automorphisms and changes of basis on $G$ preserving
+the commutator allow exactly $\det(g)=\pm1$. Proposition~\ref{prop:h1} leaves
+the full binary quadratic associator parameter. The chosen $\chi_p$ makes the
+remaining action ordinary congruence, with no affine shift.
+Rank zero has one orbit, rank one has its two coefficient square classes,
+and rank two has its nonzero determinant as invariant. Any nondegenerate
+binary form represents one over $\Fp$, hence is congruent to $X^2+dY^2$ with
+$d$ its determinant. Any such congruence has determinant $\pm1$. These give
+exactly $p+2$ forms for each $c$.
+\end{proof}
+
+\section{The rank-one-power normal forms}
+Define $\Gamma_1$ on $(x,y,z,t)\in\Fp^4$ by
+\[
+(x,y,z,t)(u,w,a,b)=
+((x+u)\bmod p,(y+w)\bmod p,z+a+xw,t+b+\lfloor(x+u)/p\rfloor).
+\]
+Let $X,Y,Z,T$ be the four coordinate generators. Then $[X,Y]=Z$,
+$X^p=T$, and $Z,T$ are central of order $p$.
+The map $r(g)=x_g+pt_g\in\mathbb Z/p^2$ is a homomorphism.
+For $c\in\{1,\epsilon\}$, $v=-\epsilon/c$ and $s\in\Fp$ set
+\begin{equation}\label{eq:prime-omega}
+\omega_{c,s}(g,h,k)=\zeta^{c\phi(g,h,k)
++v x_g\lfloor(r(h)+r(k))/p^2\rfloor+s a_y(g,h,k)}.
+\end{equation}
+The three factors are respectively inflated from $H_p$, from a cyclic
+$C_{p^2}$ cocycle with coefficient $pv$, and from $C_p$. Thus this is a
+normalized three-cocycle for every odd prime, including $3$.
+For $(a,b)\in\Fp^2$, the central degree $(0,0,a,b)$ has half-braiding
+\begin{equation}\label{eq:tau-prime}
+\tau_{a,b}(g)=\zeta^{-ca z_g}\eta^{-vb r(g)}.
+\end{equation}
+Its slant identity follows from $\delta z=-x\smile y$ and the homomorphism $r$.
+The central tensor correction is
+$\zeta^{v x_g\lfloor(b+b')/p\rfloor}$, which makes these central objects
+form an order-$p^2$ elementary abelian group. Their self-braiding is
+$\zeta^{-ca^2-vb^2}$. Let $\cB$ denote this anisotropic modular factor and set
+\[
+\cC_1(c,s)=\cB'\subset Z(\Vec_{\Gamma_1}^{\omega_{c,s}}).
+\]
+It has dimension $p^6$, central charge $-1$, and is nonpointed: otherwise its
+product with $\cB$ would be pointed, whereas the centre contains
+nonpointed $\Rep(\Gamma_1)$.
+
+\begin{proposition}\label{prop:prime-orbits}
+All rank-one-power categories have exactly the normal forms $\cC_1(c,s)$,
+with distinct pairs $(c,s)$ inequivalent.
+\end{proposition}
+\begin{proof}[Proof retaining affine identifications]
+Orthogonality puts the power image on the line perpendicular to the
+commutator. Changes of basis on $G$ and metric basis on $A$ normalize the data
+to $\kappa=Z e+T y_1$, $Q_A(Z)=c$, $Q_A(T)=v=-\epsilon/c$.
+There are two possibilities for the commutator norm square class.
+By Proposition~\ref{prop:h1}, the associator torsor modulo lower-data
+automorphisms is restriction to $K=\ker P=\langle Y\rangle$, a copy of $\Fp$.
+The explicit base \eqref{eq:prime-omega} with $s=0$ is identically trivial
+on the entire preimage $\widetilde K=\{x=0\}\subset\Gamma_1$, since every term
+of $\phi$ and of the cyclic $p^2$ factor contains an $x$ coordinate. Its
+restriction to the section $\langle Y\rangle$ therefore identifies $s$ with
+the residual cyclic restriction class.
+
+The stabilizer of the normalized lower data sends
+$X\mapsto aX+bY$, $Y\mapsto dY$ on $G$. Preservation of the norms of
+$P(X)=T$ and $[X,Y]=Z$ forces $a^2=d^2=1$.
+It therefore acts trivially on $H^3(K,\C^\times)$, since cyclic restriction
+scales by $d^2$. To check the affine part as well, any crossed equivalence
+induces an isomorphism of the pointed degree groups preserving $A$, the
+commutator and the power map, hence preserving $\widetilde K$. Pullback of
+the base cocycle remains identically trivial on $\widetilde K$. Restrict its
+cochain comparison further to the section $\langle Y\rangle$: inflation from
+$K$ is detected there, and the residual parameters must satisfy
+$s'=d^2s=s$. Changing the lift of $Y$ does not alter this argument, since the
+base vanishes on all of $\widetilde K$. The $H^1$ action also restricts to zero.
+Thus no affine translation remains. Inflation of $\zeta^{s a_y}$ realizes
+every $s$, proving both exhaustion and distinctness.
+\end{proof}
+
+\begin{proposition}\label{prop:prime}
+$\Inv\cC_1(c,s)=C_{p^2}\times C_p$, all order-$p$ invertibles have twist one,
+and $\cC_1(c,s)$ is prime.
+\end{proposition}
+\begin{proof}
+All invertibles of the full centre have central flux $(a,b)$ and half-braiding
+\eqref{eq:tau-prime} times a character $\chi$, where
+$\chi(X)=\eta^k$, $\chi(Y)=\zeta^\ell$,
+$k\in\mathbb Z/p^2$, $\ell\in\Fp$.
+Monodromy with all $(u,w)$ of the embedded factor is trivial precisely when
+$a=0$ and $k\equiv2vb\pmod p$.
+The resulting group has order $p^3$. For $b\ne0$ its $p$th power is the
+nontrivial character with value $\zeta^k$ on $X$, since the section
+\eqref{eq:tau-prime} itself has order $p$. It is therefore $C_{p^2}\times C_p$.
+Its twists are $\zeta^{vb^2}$, so every order-$p$ invertible has $b=0$ and
+twist one.
+A nontrivial modular factorization must have a pointed factor: two nonpointed
+factors would each have dimension at least $p^5$ by \cite{CPS}. That pointed
+factor can have dimension only $p$, again by the same lower bound on the other
+factor. Such a factor requires an order-$p$ invertible with nontrivial twist,
+which does not exist. Hence $\cC_1(c,s)$ is prime.
+\end{proof}
+
+\begin{corollary}\label{cor:exponent}
+The product models have Frobenius--Schur exponent $p^2$ and the prime models
+have Frobenius--Schur exponent $p^3$.
+\end{corollary}
+\begin{proof}
+The product assertion follows from \cite[Proposition 2]{CPS} for the
+dimension-$p^5$ factor and the exponent $p$ of its pointed factor.
+For a pointed category $\Vec_\Gamma^\omega$, the exponent of its centre is
+\[
+\mathop{\rm lcm}_{\langle g\rangle\leq\Gamma}
+|g|\,\operatorname{ord}(\omega|_{\langle g\rangle}),
+\]
+by \cite[Theorem 9.2]{NS}. In $\Gamma_1$, an element has order $p^2$
+exactly when its $x$ coordinate is nonzero. On such a cyclic subgroup,
+the Heisenberg and $y$ factors in \eqref{eq:prime-omega} inflate from $C_p$
+and become cohomologically trivial: inflation on $H^4(-,\mathbb Z)$
+multiplies the generator by $p^2$. The remaining cyclic factor has coefficient
+$pv\,r(g)^2$ modulo $p^2$ and therefore order $p$. An order-$p$ cyclic
+subgroup contributes at most $p^2$. Thus the full centre has exponent $p^3$.
+The stabilizing factor has exponent $p$, so its centralizer has exponent $p^3$.
+\end{proof}
+
+The two branches are inequivalent by their invertible groups. The first factor
+in \eqref{eq:product} is prime for the same minimum-dimension reason.
+Propositions~\ref{prop:product-orbits} and \ref{prop:prime-orbits}, together
+with the canonical-subcategory lemma and obstruction calculation, prove
+Theorem~\ref{thm:main}.
+
+\section{Completing the dimension-$p^6$ classification with prior branches}
+For charge one, DGNO identifies every category with $Z(\Vec_K^\omega)$,
+$|K|=p^3$. The complete pointed Morita classification of \cite{MMU} gives
+the known $5p+32$ classes. These are prior and are not counted as new here.
+Pointed categories of charge $-1$ have the classical odd-primary metric-group
+normal forms: choose integers $n_r\ge0$ with $\sum r n_r=6$, and for each
+$n_r>0$ a determinant square class $\delta_r\in\{1,\epsilon\}$; on
+$(\mathbb Z/p^r)^{n_r}$ use diagonal coefficients
+$1,\ldots,1,\delta_r$. Take the orthogonal product, retaining precisely
+those with Gauss sum
+\[
+\prod_{r\text{ odd}}\varepsilon_p^{n_r}
+\left(\frac{\delta_r}{p}\right)=-1,
+\qquad \varepsilon_p=\begin{cases}1&p\equiv1\pmod4,\\i&p\equiv3\pmod4.\end{cases}
+\]
+Odd-primary diagonalization and its determinant criterion follow by ordinary
+Gram--Schmidt over $\mathbb Z/p^r$, splitting a summand of maximum exponent
+and inducting. This branch is classical, not a new result.
+
+\section{Reproducible checks}
+The supplementary repository
+\href{https://github.com/numina-agents/odd-prime-dimension-six}{\texttt{odd-prime-dimension-six}} contains the
+explicit check scripts and exact source provenance. The scripts
+\texttt{check\_control.py} and \texttt{check\_prime\_control.py} check all
+$27^4$ and $81^4$ cocycle equations at $p=3$, together with central slants,
+tensor corrections and self-braidings. The script \texttt{check\_chi.py}
+checks the exceptional cyclic restrictions and the Pluecker primitive.
+A separate symbolic check verifies the polynomial cocycle and central-slant
+identities over $\mathbb Q$. These are consistency checks of the explicit
+cochains; the equivalence and exhaustion proofs do not rely on a census.
+
+\subsection*{Acknowledgments}
+We thank Phoebe for independent checks of the central-flux and canonical
+Tannakian reductions, and Cygnus for the complete independent assessment,
+the symbolic verification and the clearer preimage-$K$ exposition of the
+affine restriction argument. These results have not been checked by a human.
+
+\begin{thebibliography}{99}
+\bibitem{ENO05} P. Etingof, D. Nikshych, and V. Ostrik,
+\emph{On fusion categories}, Ann. of Math. 162 (2005), 581--642,
+arXiv:math/0203060.
+\bibitem{GN} J. Green and D. Nikshych,
+\emph{The Tannakian radical and the mantle of a braided fusion category},
+arXiv:2412.16722v2 (2025).
+\bibitem{Schopieray} A. Schopieray,
+\emph{Nondegenerate extensions of near-group braided fusion categories},
+Rev. Uni\'on Mat. Argentina 64 (2023), 413--438, arXiv:2109.04011.
+\bibitem{Naidu} D. Naidu, \emph{Crossed pointed categories and their
+equivariantizations}, Pacific J. Math. 247 (2010), 477--496.
+\bibitem{MN} G. Mason and S.-H. Ng,
+\emph{Cleft extensions and quotients of twisted quantum doubles},
+Developments in Mathematics 38 (2014), 229--246, arXiv:1404.2016.
+\bibitem{NN} D. Naidu and D. Nikshych,
+\emph{Lagrangian subcategories and braided tensor equivalences of twisted
+quantum doubles of finite groups}, arXiv:0705.0665.
+\bibitem{CPS} A. Czenky, J. Plavnik, and A. Schopieray,
+\emph{On Frobenius--Schur exponent bounds}, arXiv:2404.06643, Section 4.2.
+\bibitem{DGNO} V. Drinfeld, S. Gelaki, D. Nikshych, and V. Ostrik,
+\emph{Group-theoretical properties of nilpotent modular categories},
+arXiv:0704.0195.
+\bibitem{GR} T. Gannon and A. Riesen, \emph{Orbifolds of Pointed Vertex Operator
+Algebras I}, arXiv:2410.00809.
+\bibitem{MMU} K. Maya, A. Mej\'ia Casta\~no, and B. Uribe,
+\emph{Classification of pointed fusion categories of dimension $p^3$ up to weak
+Morita equivalence}, arXiv:1808.05139.
+\bibitem{ENO} P. Etingof, D. Nikshych, and V. Ostrik,
+\emph{Fusion categories and homotopy theory}, arXiv:0909.3140.
+\bibitem{DN} A. Davydov and D. Nikshych,
+\emph{Braided Picard groups and graded extensions of braided tensor categories},
+arXiv:2006.08022.
+\bibitem{NS} S.-H. Ng and P. Schauenburg,
+\emph{Frobenius--Schur indicators and exponents of spherical categories},
+arXiv:math/0601012, Theorem 9.2.
+\end{thebibliography}
+\end{document}

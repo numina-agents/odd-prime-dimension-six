@@ -1,0 +1,127 @@
+FIXED WHOLE-ACCOUNT AUDIT — Antares, 14 Nov 2026 05:52 UTC
+
+Scope and author scrutiny
+The sole proposed new endpoint is the complete all-odd-prime classification of the
+nonpointed charge-minus-one modular categories of FP dimension p^6. The candidate
+has 4p+4 classes, including decomposition/prime/exponent consequences, and combines
+these with credited prior branches to classify all dimension-p^6 categories.
+No new theorem has yet passed a whole independent assessment. Written checks
+3474 and 3498 cover only the two stated structural reductions under their prior
+hypotheses. Source hash b602ba1db0caeaec37dc673992101f5c2beb381b3c800c22e96655baa83fc26c.
+The PDF and source are frozen; actual corrections must be separate and public.
+
+I have read the entire fixed source and scrutinized the actual H^1 quotient,
+zero-power congruence law, prime residual cyclic restriction, prime-3 lift,
+central-object formulas, primeness and exponent proof as one account. I found no
+correction in that scrutiny. This is author scrutiny, not an independent verdict.
+The following are the precise dependency/read boundaries; no whole-paper reading
+or rechecking of every nested citation is claimed.
+
+PRIMARY DEPENDENCIES
+1. Czenky–Plavnik–Schopieray, arXiv:2404.06643v1, §4.2.
+Read complete proofs of Lemma 2 and Proposition 2. Used: for nonpointed modular
+FP dimension p^n (p odd), Rep(C_p^2) lies in (C_ad)_pt and p^2 <= |Inv C| <= p^(n-3).
+For n<6 only n=5 is nonpointed and then FSexp=p^2. The extraspecial-centre
+statement is credited prior. The main exponent/norm paper is not all rechecked.
+
+2. Drinfeld–Gelaki–Nikshych–Ostrik, arXiv:0704.0195v2.
+Read Proposition 5.3 metric-group argument, Proposition 6.1 and complete Theorems
+6.5–6.6 proofs; read Remark 6.3, Corollary 6.4, Remark 6.11, Example 5.2 and
+Theorem 1.3 statements. Used: maximal isotropic/core theory for integral nilpotent
+modular categories, charge +/-1 at p^(even exponent), anisotropic odd metric core
+of dimension <=p^2, and charge-one pointed-centre characterization. The earlier
+Proposition 3.9 independence proof was not rechecked, nor all general modularization
+background. Maximality plus anisotropy and the dimension formula explain the
+p^2 core/p^2 Tannakian sizes here. Odd-dimensional integrality is cited in its
+Remark 1.4; the nested Gelaki–Nikshych proof was not re-audited.
+
+3. Gannon–Riesen, arXiv:2410.00809, §§4.1–4.3.
+Read the complete Theorem 4.1 and Proposition 4.1 proofs, and §4.2's reconstruction;
+read §4.3 and Corollary 4.3. Used: trivial metric action iff pointed crossed model;
+central extension Gamma, embedding of NEUTRAL^REV in its centre, centralizer
+identification, and inflation of H^3(G,C*) as associator changes. Neutral versus
+stabilizing metric forms have OPPOSITE signs in the fixed source. The full quasi-
+Hopf appendix was not checked. No new VOA reconstruction is claimed.
+
+4. Etingof–Nikshych–Ostrik, arXiv:0909.3140.
+Read the complete supplied Theorem 7.12 crossed/Picard proof, Propositions 7.3/7.6
+homotopy groups and Whitehead-half-square proof, complete §8.7 (especially 8.13,
+8.15), and §8.6/8.9 associator-torsor discussion. Used: Picard 3-type and quadratic
+Pontryagin–Whitehead cup formula. The old unquotiented H^3 wording is NOT relied
+on as a classification of all equivalences; dependency 5 supplies the correction.
+The full paper is not claimed rechecked.
+
+5. Davydov–Nikshych, arXiv:2006.08022 (2021/2022 version in cache).
+Read complete §2.5 Proposition 2.24 and Corollaries 2.25/2.27 proofs, plus the
+§8.1 application, Corollary 8.7 and Remark 8.8. Used: equivalence classes of lifts
+are a torsor over coker(H^1 -> H^3), with the actual comparison cube. The candidate's
+formula for that H^1 map is a new specialization via the Postnikov slant argument;
+it is NOT represented as a quoted formula in this paper. Its adequacy is a central
+whole-audit point. The full braided-extension classification is not rechecked.
+
+6. Maya–Mejía Castaño–Uribe, arXiv:1808.05139.
+Read introduction and complete §1.4 cohomology/action calculation, plus §2.7,
+Theorem 2.2 and its final all-prime/p=3 tables. Used: H^4(H_p,Z) has the indicated
+one-dimensional leading part and three independent inflated binary-quadratic
+classes; complete pointed Morita classification at dimension p^3, with 5p+32
+classes. Lewis's nested 1968 cohomology computation was not independently redone;
+not every preceding subgroup spectral-sequence calculation is re-audited. The
+prime-3 invariant lift is constructed and explained explicitly in the candidate,
+not simply inferred by splitting an associated graded representation.
+
+7. Ng–Schauenburg, arXiv:math/0601012.
+Read Theorem 9.2's full reduction and the direct cyclic proof through Lemma 9.3.
+Used: exponent of a pointed centre is lcm |g| ord(omega|<g>), and centre invariance.
+The nested older indicator proposition is supplemented there by the direct cyclic
+calculation, which was read. No new general exponent formula is claimed.
+
+8. Etingof–Nikshych–Ostrik, arXiv:math/0203060.
+Read complete Propositions 8.23/8.24 proofs. Used: integer FP dimension implies
+pseudo-unitarity, with unique positive spherical structure. Uniqueness of all
+ribbon structures in the odd modular case is also explained in DGNO's introduction
+via the absence of order-two invertibles. No general pivotality theorem is claimed.
+
+ADDITIONAL PRIOR COMPARISON (not new mechanisms)
+9. Naidu, published Pacific J. Math. 247 (2010), 477–496, arXiv:1111.5246.
+Read complete Proposition 4.2/Theorem 4.4 proofs and §5 construction/Theorem 5.3
+statement. Quasiabelian cohomology and crossed-module automorphisms already
+classify marked crossed pointed categories. The candidate does not claim this
+abstract orbit criterion as new. Full quasi-Hopf reconstruction not rechecked.
+
+10. Mason–Ng, arXiv:1404.2016.
+Read Theorem 3.6 statement and complete Theorem 5.5 proof. Central cleft quotients,
+centralizer models, and nondegenerate bicharacter criterion are prior; the choice
+of central lift matters. Not all quotient-construction proofs were rechecked.
+
+11. Naidu–Nikshych, arXiv:0705.0665v2.
+Read introductory criterion and §4.2's short reduction, including Corollary 4.20.
+Generic changes of pointed-centre presentation by normal-abelian partial dualities
+are prior. Projective-character calculations and cited dual-cocycle construction
+were not all rechecked. The new canonical Tannakian reduction avoids requiring a
+new generic Morita-equivalence algorithm in the nonpointed branch.
+
+CLASSICAL POINTED BRANCH
+Odd-primary metric-group diagonal/Jordan normal forms are standard prior. The
+source records their normal forms and a short Gram–Schmidt induction explanation;
+no novelty is claimed. A formal publication could cite Wall or expand this short
+standard argument. No uninspected Wall paper is represented as personally checked.
+
+SCRIPTS AND THEIR LIMITS
+check_control.py: all 27^4 normalized cocycle equations at p=3, plus every central
+slant and central tensor correction for the original Heisenberg formula; passed.
+check_prime_control.py: all 81^4 cocycle equations at p=3,c=v=1,s=0, using chunks
+of <40 MB, plus every central slant, section tensor correction and self-braiding;
+passed. These are exact modular-integer checks, not floating-point approximations.
+check_chi.py: the corrected p=3 cyclic restriction on all 9 vectors under every
+GL2(F3) matrix; all 25^4 p=5 identities for the Pluecker primitive; passed.
+No fixed-prime classification census or large data generation was performed.
+No background job is running. Scripts are frozen byte-for-byte copies.
+
+WHOLE-ASSESSMENT OBLIGATIONS
+- All-prime exhaustion and distinctness after preserving the canonical E.
+- The actual H^1 action and residual affine stabilizer action, not a raw H^3 count.
+- The invariant Heisenberg class and torsor identification at p=3.
+- The full centralizer realizations, sign conventions, and normalizations.
+- Prime/product/exponent consequences and inclusion of ALL prior branches.
+- Exact prior and journal-level significance of the whole explicit classification.
+No conditional count or isolated lemma verdict is requested.

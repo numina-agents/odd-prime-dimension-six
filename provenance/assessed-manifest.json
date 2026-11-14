@@ -1,0 +1,148 @@
+{
+  "scope": "Whole dimension-p6 candidate 3639; fixed source and complete supplementary/prior audit packet",
+  "frozen_at_utc": "2026-11-14 05:52",
+  "source_sha256": "b602ba1db0caeaec37dc673992101f5c2beb381b3c800c22e96655baa83fc26c",
+  "instructions": "Do not modify listed files. Actual corrections are separate/public. Manifest does not hash itself.",
+  "files": [
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen.tex",
+      "bytes": 23112,
+      "sha256": "b602ba1db0caeaec37dc673992101f5c2beb381b3c800c22e96655baa83fc26c"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen.pdf",
+      "bytes": 300128,
+      "sha256": "66388adb01f7a05705888570229f1b8455f02b488f315c2d754df888637aaa1c"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/prior-audit.txt",
+      "bytes": 8197,
+      "sha256": "23226563506061ab47a7cf4fbbfad1230b1e601f4e2f05dded62cb198062054b"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen-supplement/check_chi.py",
+      "bytes": 1315,
+      "sha256": "5840b659f5a523cfba305af862f5173cc38f31b16a20fb9027b36aa8cab3a6b1"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen-supplement/check_control.py",
+      "bytes": 1613,
+      "sha256": "e94589304402d4a81aa1deeca0cb30dafc389442e7cf8bb65d8a8c737930f378"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/research/dimension-p6/frozen-supplement/check_prime_control.py",
+      "bytes": 2022,
+      "sha256": "4a1179a9bf86e36f3baced854e522e23b44a719b056f107e4150202c1de86bd1"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/czenky-plavnik-schopieray-fs-bounds-2024.pdf",
+      "bytes": 285073,
+      "sha256": "9270e09f7bbe9639d54095246a89946db7fec07a5bbb5ee48151542ad4ee5d62"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/czenky-plavnik-schopieray-fs-bounds-2024.txt",
+      "bytes": 70889,
+      "sha256": "11390b42e820ff8118067117aa1c3614847abc7252069c2257d4cffb038a02bf"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/dgno-nilpotent-2007.pdf",
+      "bytes": 344912,
+      "sha256": "46eab871530511b74f34b05ff1c828238017452ba3ebe468acd6148d11be73d9"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/dgno-nilpotent-2007.txt",
+      "bytes": 79281,
+      "sha256": "ddfaf4f868f35ba7db528d0843c286dd157629d152d0ec2cb7828662c6f01578"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/gannon-riesen-pointed-orbifolds-2024.pdf",
+      "bytes": 560909,
+      "sha256": "2f929bce2ce55e7166183616dd07450b8e02269621aaaeac07dd7602045722d4"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/gannon-riesen-pointed-orbifolds-2024.txt",
+      "bytes": 161505,
+      "sha256": "ca05f639690291ce9acd629e390f8c34575d36156513c303a802e998881ce718"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/eno-fusion-homotopy-2010.pdf",
+      "bytes": 669909,
+      "sha256": "42214a000c7be54843c51108f07cce44fd27d8b36be8f392d425decb22d86444"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/eno-fusion-homotopy-2010.txt",
+      "bytes": 180534,
+      "sha256": "706c3b3822a011bae81c0c196e3ac211794ff8294d080ebe63e87ec7e65e82cc"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/davydov-nikshych-braided-picard-2021.pdf",
+      "bytes": 1029830,
+      "sha256": "d42fa7415266f93f46317d5413e8061807f3a53b688ac29ede1955f1d4ea544e"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/davydov-nikshych-braided-picard-2021.txt",
+      "bytes": 385533,
+      "sha256": "dceecab0fc5bbd7ffd4251e21338bc3744c88b61e7b15c427a63772942888efb"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/maya-mejia-uribe-pointed-p3-2018.pdf",
+      "bytes": 206385,
+      "sha256": "df037bb4e391adaf79eba5a3f0dfcf91a5d83d843946e201542dd99727414128"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/maya-mejia-uribe-pointed-p3-2018.txt",
+      "bytes": 52838,
+      "sha256": "17bb605a08466063063645fc3341fa7d53d1c15925325b477abf89b6b5cdaccc"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/ng-schauenburg-fs-exponent-2007.pdf",
+      "bytes": 908084,
+      "sha256": "27060675f02e941ee1443c3b0fa8983e273096fdc6990e06c1bc7165568a6c72"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/ng-schauenburg-fs-exponent-2007.txt",
+      "bytes": 123202,
+      "sha256": "eabbb65e4edcdc170dfa95038252fbcbb201e3065bb2ed196e377089f7e3ef43"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/eno-on-fusion-categories-2005.pdf",
+      "bytes": 619370,
+      "sha256": "fa7e21ceab3e9933f7fe22e13dbfb4678d092edfd062f2ac48e94463f7f15124"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/eno-on-fusion-categories-2005.txt",
+      "bytes": 170294,
+      "sha256": "b7e4e45a300c41a1f8fe81ef153d92590a40153dbd1eb1090f37283d2bea31dd"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/naidu-crossed-pointed-2010.pdf",
+      "bytes": 274906,
+      "sha256": "9844c75a2113f78ddbd4d59b2e83e7bc31fe9229f6141bba7eb943920cb8240c"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/naidu-crossed-pointed-2010.txt",
+      "bytes": 67015,
+      "sha256": "c2504b07ab6df54a6b37f85c58b29cb6491cee51099d03486f460fd9d34d2307"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/mason-ng-cleft-2014.pdf",
+      "bytes": 204030,
+      "sha256": "b3d1ab51118f5356317c58daa75d1f232fbbb0be6ee7323967edd2bd2dedbacc"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/mason-ng-cleft-2014.txt",
+      "bytes": 49984,
+      "sha256": "202e3909f5fd394615ed65f6701b0e0b0a6a001c48b688690290b7fa7226361c"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/naidu-nikshych-lagrangian-2008.pdf",
+      "bytes": 365579,
+      "sha256": "2e9cef13d0de9fe7e66cdacfbe0860320def8751347cef4b3db6fea691f11571"
+    },
+    {
+      "path": "/home/agents/worlds/mtc/people/Antares/literature/naidu-nikshych-lagrangian-2008.txt",
+      "bytes": 98277,
+      "sha256": "be3edca330cbc6ab08b1f66e6087d4c8c475ea189c2bf00f8ef68248470fb34b"
+    }
+  ]
+}
