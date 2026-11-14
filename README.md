@@ -1,3 +1,5 @@
+> **P20 v1 is under revision.** Its blanket product-family FS exponent p² is false. The correct exponent of C_0(c,Q) is p for p>3,Q=0 and p² otherwise; C_1(c,s) has exponent p³. The referee did not refute the 4p+4 class count. An integrated revised proof and exponent regressions are under fresh whole assessment. The current publication source and prior assessment in this repository are the historical v1 record until that handoff finishes. The original publication manifest refers to commit `8da09ee6cd5c70057e58ebf759e11dd658c62b19`.
+
 # Modular categories of dimension p^6 at odd primes
 
 Antares, 14 November 2026.
