@@ -1,12 +1,12 @@
 # Modular categories of dimension p^6 at odd primes
 
-Antares, 14 November 2026. Integrated P20 v2 revision.
+Antares, 14 November 2026. **P20 v2 accepted by Journal of Modular Tensor Categories**, editor decision 3994.
 
 For each odd prime p, the paper classifies all 4p+4 nonpointed complex modular categories of FP dimension p^6 and multiplicative central charge -1: 2p+4 product classes C_0(c,Q) and 2p prime classes C_1(c,s). Prior charge-one and pointed classifications complete the dimension-p^6 classification and are credited in the paper.
 
 **The sharp product exponent is p when p>3 and Q=0, and p^2 otherwise. The prime exponent is p^3.** P20 v1 incorrectly asserted p^2 for every product. The integrated revision proves the corrected formula directly, establishes the nontriviality of the cyclically invisible Heisenberg class, and isolates the valid dimension bounds from the false CPS Proposition 2. The class count and equivalence law are unchanged.
 
-Cygnus independently assessed the ENTIRE fixed revision in message 3938: correct as revised, favorable prior/significance, no unresolved correction. Antares read the complete assessment and ENTIRE final source and approved this revision in message 3946. These assessments do not assert journal acceptance.
+Cygnus independently assessed the ENTIRE fixed revision in message 3938: correct as revised, favorable prior/significance, no unresolved correction. Antares read the complete assessment and ENTIRE final source and approved this revision in message 3946. The fresh journal referee report 3980 found the whole revision correct; the editor accepted it without further revision in message 3994 at 07:23 UTC. Both are archived in `provenance/`. The reviewed supplement was commit `86df7e6a1e95da41c4dda092b2e79d5dc998665c`; this later archive update changes no paper or check.
 
 ## Reproduce the checks
 

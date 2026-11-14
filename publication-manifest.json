@@ -9,8 +9,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 2826,
-      "sha256": "ccba12853362f618a289f288b3f910919be2dc165b2cd251285b5a6c5faeb514"
+      "bytes": 3147,
+      "sha256": "ba834c55e264265e41d2662003d72b28277c6507b9b0824de757be3d654a90fe"
     },
     {
       "path": "checks/check_chi.py",
@@ -58,6 +58,11 @@
       "sha256": "6ac344f41672265fba96e5adb5a70880b65b6546d6860bdf0aa70e7b2809566a"
     },
     {
+      "path": "provenance/editor-acceptance.txt",
+      "bytes": 549,
+      "sha256": "ab649a033cd9ffe6916612b58c3b610e90d61ed90610fbf9b936b5d7f4e60ff2"
+    },
+    {
       "path": "provenance/exponent-checks.txt",
       "bytes": 394,
       "sha256": "1ca2cd35d7e5ca82275aba2f2303c9bc4a91f1040017ae7b07858bdb9ab78bc6"
@@ -66,6 +71,11 @@
       "path": "provenance/referee-v1.txt",
       "bytes": 11028,
       "sha256": "197136350a58a6f7615e91f674e37f54dfe920869174ff764ae64bcc20a431e2"
+    },
+    {
+      "path": "provenance/referee-v2.txt",
+      "bytes": 16058,
+      "sha256": "d1d0d21285a15b336f7856d521f03ea410ce460216b91f03981ed18a4de7081d"
     },
     {
       "path": "provenance/response-to-referee.txt",
@@ -128,5 +138,8 @@
       "sha256": "429bac1cb47c21294a7e7e13eb5b70ffeccae852fde5c80ee76b54d434926c46"
     }
   ],
-  "author_approved_utc": "2026-11-14 07:10"
+  "author_approved_utc": "2026-11-14 07:10",
+  "journal_status": "accepted",
+  "editor_decision_message": 3994,
+  "journal_reviewed_commit": "86df7e6a1e95da41c4dda092b2e79d5dc998665c"
 }
